@@ -1,0 +1,12 @@
+D:\dotnet\QuanLySinhVien\src\MyApp.Domain\bin\Debug\net8.0\MyApp.Domain.deps.json
+D:\dotnet\QuanLySinhVien\src\MyApp.Domain\bin\Debug\net8.0\MyApp.Domain.dll
+D:\dotnet\QuanLySinhVien\src\MyApp.Domain\bin\Debug\net8.0\MyApp.Domain.pdb
+D:\dotnet\QuanLySinhVien\src\MyApp.Domain\obj\Debug\net8.0\MyApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\dotnet\QuanLySinhVien\src\MyApp.Domain\obj\Debug\net8.0\MyApp.Domain.AssemblyInfoInputs.cache
+D:\dotnet\QuanLySinhVien\src\MyApp.Domain\obj\Debug\net8.0\MyApp.Domain.AssemblyInfo.cs
+D:\dotnet\QuanLySinhVien\src\MyApp.Domain\obj\Debug\net8.0\MyApp.Domain.csproj.CoreCompileInputs.cache
+D:\dotnet\QuanLySinhVien\src\MyApp.Domain\obj\Debug\net8.0\MyApp.Domain.dll
+D:\dotnet\QuanLySinhVien\src\MyApp.Domain\obj\Debug\net8.0\refint\MyApp.Domain.dll
+D:\dotnet\QuanLySinhVien\src\MyApp.Domain\obj\Debug\net8.0\MyApp.Domain.pdb
+D:\dotnet\QuanLySinhVien\src\MyApp.Domain\obj\Debug\net8.0\ref\MyApp.Domain.dll
+D:\dotnet\QuanLySinhVien\src\MyApp.Domain\obj\Debug\net8.0\MyApp.Domain.csproj.AssemblyReference.cache

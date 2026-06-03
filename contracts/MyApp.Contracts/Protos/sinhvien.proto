@@ -1,0 +1,54 @@
+syntax="proto3";
+option csharp_namespace = "MyApp.Contracts.Protos";
+
+service SinhVienGrpc {
+  rpc GetAllSinhViens (GetAllSinhViensRequest) returns (GetAllSinhViensResponse);
+  rpc GetSinhVienById (GetSinhVienByIdRequest) returns (SinhVienResponse);
+  rpc CreateSinhVien (CreateSinhVienRequest) returns (CreateSinhVienResponse);
+  rpc UpdateSinhVien (UpdateSinhVienRequest) returns (UpdateSinhVienResponse);
+  rpc DeleteSinhVien (DeleteSinhVienRequest) returns (DeleteSinhVienResponse);
+}
+
+message SinhVien {
+  int32 id = 1;
+  string tensv = 2;
+  string mssv = 3;
+}
+message LopHocInfo{
+    string tenlop = 1;
+  string phong = 2;
+}
+message GetAllSinhViensRequest {}
+message GetAllSinhViensResponse {
+  repeated SinhVien sinhViens = 1;
+}
+message GetSinhVienByIdRequest {
+  int32 id = 1;
+}
+message SinhVienResponse {
+  int32 id = 1;
+  string tensv = 2;
+  string mssv = 3;
+}
+message CreateSinhVienRequest {
+  string tensv = 1;
+  string mssv = 2;
+  repeated LopHocInfo danhsachlophoc=3;
+}
+message CreateSinhVienResponse {
+  int32 id = 1;
+}
+message UpdateSinhVienRequest {
+  int32 id = 1;
+  string tensv = 2;
+  string  mssv = 3;
+}
+message UpdateSinhVienResponse {
+  bool success = 1;
+}
+message DeleteSinhVienRequest {
+  int32 id = 1;
+}
+message DeleteSinhVienResponse {
+  bool success = 1;
+}

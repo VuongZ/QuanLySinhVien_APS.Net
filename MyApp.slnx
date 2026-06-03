@@ -1,0 +1,16 @@
+<Solution>
+  <Folder Name="/contracts/">
+    <Project Path="contracts/MyApp.Contracts/MyApp.Contracts.csproj" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/MyApp.Application/MyApp.Application.csproj" />
+    <Project Path="src/MyApp.Domain/MyApp.Domain.csproj" />
+    <Project Path="src/MyApp.Infrastructure/MyApp.Infrastructure.csproj" />
+    <Project Path="src/MyApp.Presentation/MyApp.Presentation.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/MyApp.Application.Tests/MyApp.Application.Tests.csproj" />
+    <Project Path="tests/MyApp.Domain.Tests/MyApp.Domain.Tests.csproj" />
+    <Project Path="tests/MyApp.Integration.Tests/MyApp.Integration.Tests.csproj" />
+  </Folder>
+</Solution>

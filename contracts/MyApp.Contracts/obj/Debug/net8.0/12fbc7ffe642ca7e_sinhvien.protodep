@@ -1,0 +1,2 @@
+obj\Debug\net8.0\Protos/Sinhvien.cs \
+obj\Debug\net8.0\Protos/SinhvienGrpc.cs: Protos/sinhvien.proto

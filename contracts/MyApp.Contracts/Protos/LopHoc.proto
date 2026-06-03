@@ -1,0 +1,52 @@
+syntax = "proto3";
+option csharp_namespace = "MyApp.Contracts.Protos";
+service LopHocGrpc {
+  rpc GetAllLopHocs (GetAllLopHocsRequest) returns (GetAllLopHocsResponse);
+  rpc GetLopHocById (GetLopHocByIdRequest) returns (LopHocResponse);
+  rpc CreateLopHoc (CreateLopHocRequest) returns (CreateLopHocResponse);
+  rpc UpdateLopHoc (UpdateLopHocRequest) returns (UpdateLopHocResponse);
+  rpc DeleteLopHoc (DeleteLopHocRequest) returns (DeleteLopHocResponse);
+}
+message LopHoc {
+  int32 id = 1;
+  string tenlop = 2;
+  string Phong = 3;
+}
+message SinhVienInfo{
+    string tensv = 1;
+  string mssv = 2;
+}
+message GetAllLopHocsRequest {}
+message GetAllLopHocsResponse {
+  repeated LopHoc lopHocs = 1;
+}
+message GetLopHocByIdRequest {
+  int32 id = 1;
+}
+message LopHocResponse {
+  int32 id = 1;
+  string tenlop = 2;
+  string Phong = 3;
+}
+message CreateLopHocRequest {
+  string tenlop = 1;
+  string Phong = 2;
+  repeated SinhVienInfo danhsachsinhvien=3;
+}
+message CreateLopHocResponse {
+  int32 id = 1;
+}
+message UpdateLopHocRequest {
+  int32 id = 1;
+  string tenlop = 2;
+  string Phong = 3;
+}
+message UpdateLopHocResponse {
+  bool success = 1;
+}
+message DeleteLopHocRequest {
+  int32 id = 1;
+}
+message DeleteLopHocResponse {
+  bool success = 1;
+}

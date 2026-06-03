@@ -1,0 +1,12 @@
+D:\dotnet\QuanLySinhVien\contracts\MyApp.Contracts\bin\Debug\net8.0\MyApp.Contracts.deps.json
+D:\dotnet\QuanLySinhVien\contracts\MyApp.Contracts\bin\Debug\net8.0\MyApp.Contracts.dll
+D:\dotnet\QuanLySinhVien\contracts\MyApp.Contracts\bin\Debug\net8.0\MyApp.Contracts.pdb
+D:\dotnet\QuanLySinhVien\contracts\MyApp.Contracts\obj\Debug\net8.0\MyApp.Contracts.csproj.AssemblyReference.cache
+D:\dotnet\QuanLySinhVien\contracts\MyApp.Contracts\obj\Debug\net8.0\MyApp.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+D:\dotnet\QuanLySinhVien\contracts\MyApp.Contracts\obj\Debug\net8.0\MyApp.Contracts.AssemblyInfoInputs.cache
+D:\dotnet\QuanLySinhVien\contracts\MyApp.Contracts\obj\Debug\net8.0\MyApp.Contracts.AssemblyInfo.cs
+D:\dotnet\QuanLySinhVien\contracts\MyApp.Contracts\obj\Debug\net8.0\MyApp.Contracts.csproj.CoreCompileInputs.cache
+D:\dotnet\QuanLySinhVien\contracts\MyApp.Contracts\obj\Debug\net8.0\MyApp.Contracts.dll
+D:\dotnet\QuanLySinhVien\contracts\MyApp.Contracts\obj\Debug\net8.0\refint\MyApp.Contracts.dll
+D:\dotnet\QuanLySinhVien\contracts\MyApp.Contracts\obj\Debug\net8.0\MyApp.Contracts.pdb
+D:\dotnet\QuanLySinhVien\contracts\MyApp.Contracts\obj\Debug\net8.0\ref\MyApp.Contracts.dll

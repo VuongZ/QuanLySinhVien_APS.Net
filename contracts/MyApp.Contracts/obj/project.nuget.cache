@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "YO8CW9ql9h4=",
+  "success": true,
+  "projectFilePath": "D:\\dotnet\\QuanLySinhVien\\contracts\\MyApp.Contracts\\MyApp.Contracts.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Vuong\\.nuget\\packages\\google.protobuf\\3.35.0\\google.protobuf.3.35.0.nupkg.sha512",
+    "C:\\Users\\Vuong\\.nuget\\packages\\grpc.core.api\\2.80.0\\grpc.core.api.2.80.0.nupkg.sha512",
+    "C:\\Users\\Vuong\\.nuget\\packages\\grpc.tools\\2.80.0\\grpc.tools.2.80.0.nupkg.sha512"
+  ],
+  "logs": []
+}

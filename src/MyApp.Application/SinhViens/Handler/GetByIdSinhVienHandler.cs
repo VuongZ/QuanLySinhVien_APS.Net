@@ -7,7 +7,7 @@ using MyApp.Domain.Repositories;
 
 namespace MyApp.Application.SinhViens.Handler
 {
-    public class GetByIdSinhVienHandler : IRequestHandler<GetByIdSinhVienQuery, SinhVienDocument>
+    public class GetByIdSinhVienHandler : IRequestHandler<GetByIdSinhVienQuery, SinhVienDocument?>
     {
         private readonly ISinhVienMongoRepository _sinhVienMongoRepository;
 

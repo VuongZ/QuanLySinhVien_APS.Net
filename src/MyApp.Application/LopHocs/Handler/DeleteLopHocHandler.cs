@@ -21,6 +21,9 @@ namespace MyApp.Application.LopHocs.Handler
 
         public async Task<bool> Handle(DeleteLopHocCommand request, CancellationToken cancellationToken)
         {
+            var lopHoc = await _lopHocRepository.GetByIdAsync(request.Id);
+            if (lopHoc == null) return false;
+
             await _lopHocRepository.DeleteAsync(request.Id);
             await _publishEndpoint.Publish(new LopHocDeletedEvent
             {

@@ -21,6 +21,7 @@ namespace MyApp.Application.SinhViens.Handler
 
         public async Task<bool> Handle(DeleteSinhVienCommand request, CancellationToken cancellationToken)
         {
+            var sv= await _sinhVienRepository.GetByIdAsync(request.Id_SinhVien);
             await _sinhVienRepository.DeleteAsync(request.Id_SinhVien);
             await _publishEndpoint.Publish(new SinhVienDeletedEvent
             {

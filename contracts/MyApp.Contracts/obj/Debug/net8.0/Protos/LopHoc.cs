@@ -25,17 +25,17 @@ namespace MyApp.Contracts.Protos {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChNQcm90b3MvTG9wSG9jLnByb3RvIjkKBkxvcEhvYxIQCghpZExvcEhvYxgB",
-            "IAEoBRIOCgZ0ZW5sb3AYAiABKAkSDQoFUGhvbmcYAyABKAkiKwoMU2luaFZp",
+            "IAEoBRIOCgZ0ZW5sb3AYAiABKAkSDQoFcGhvbmcYAyABKAkiKwoMU2luaFZp",
             "ZW5JbmZvEg0KBXRlbnN2GAEgASgJEgwKBG1zc3YYAiABKAkiFgoUR2V0QWxs",
             "TG9wSG9jc1JlcXVlc3QiMQoVR2V0QWxsTG9wSG9jc1Jlc3BvbnNlEhgKB2xv",
             "cEhvY3MYASADKAsyBy5Mb3BIb2MiIgoUR2V0TG9wSG9jQnlJZFJlcXVlc3QS",
             "CgoCaWQYASABKAUiQQoOTG9wSG9jUmVzcG9uc2USEAoIaWRMb3BIb2MYASAB",
-            "KAUSDgoGdGVubG9wGAIgASgJEg0KBVBob25nGAMgASgJIl0KE0NyZWF0ZUxv",
+            "KAUSDgoGdGVubG9wGAIgASgJEg0KBXBob25nGAMgASgJIl0KE0NyZWF0ZUxv",
             "cEhvY1JlcXVlc3QSDgoGdGVubG9wGAEgASgJEg0KBVBob25nGAIgASgJEicK",
             "EGRhbmhzYWNoc2luaHZpZW4YAyADKAsyDS5TaW5oVmllbkluZm8iKAoUQ3Jl",
             "YXRlTG9wSG9jUmVzcG9uc2USEAoIaWRMb3BIb2MYASABKAUiRgoTVXBkYXRl",
             "TG9wSG9jUmVxdWVzdBIQCghpZExvcEhvYxgBIAEoBRIOCgZ0ZW5sb3AYAiAB",
-            "KAkSDQoFUGhvbmcYAyABKAkiJwoUVXBkYXRlTG9wSG9jUmVzcG9uc2USDwoH",
+            "KAkSDQoFcGhvbmcYAyABKAkiJwoUVXBkYXRlTG9wSG9jUmVzcG9uc2USDwoH",
             "c3VjY2VzcxgBIAEoCCInChNEZWxldGVMb3BIb2NSZXF1ZXN0EhAKCGlkTG9w",
             "SG9jGAEgASgFIicKFERlbGV0ZUxvcEhvY1Jlc3BvbnNlEg8KB3N1Y2Nlc3MY",
             "ASABKAgyvAIKCkxvcEhvY0dycGMSPgoNR2V0QWxsTG9wSG9jcxIVLkdldEFs",
@@ -138,7 +138,7 @@ namespace MyApp.Contracts.Protos {
       }
     }
 
-    /// <summary>Field number for the "Phong" field.</summary>
+    /// <summary>Field number for the "phong" field.</summary>
     public const int PhongFieldNumber = 3;
     private string phong_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1191,7 +1191,7 @@ namespace MyApp.Contracts.Protos {
       }
     }
 
-    /// <summary>Field number for the "Phong" field.</summary>
+    /// <summary>Field number for the "phong" field.</summary>
     public const int PhongFieldNumber = 3;
     private string phong_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1922,7 +1922,7 @@ namespace MyApp.Contracts.Protos {
       }
     }
 
-    /// <summary>Field number for the "Phong" field.</summary>
+    /// <summary>Field number for the "phong" field.</summary>
     public const int PhongFieldNumber = 3;
     private string phong_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

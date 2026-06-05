@@ -10,7 +10,7 @@ service LopHocGrpc {
 message LopHoc {
   int32 idLopHoc = 1;
   string tenlop = 2;
-  string Phong = 3;
+  string phong = 3;
 }
 message SinhVienInfo{
     string tensv = 1;
@@ -26,7 +26,7 @@ message GetLopHocByIdRequest {
 message LopHocResponse {
   int32 idLopHoc = 1;
   string tenlop = 2;
-  string Phong = 3;
+  string phong = 3;
 }
 message CreateLopHocRequest {
   string tenlop = 1;
@@ -39,7 +39,7 @@ message CreateLopHocResponse {
 message UpdateLopHocRequest {
   int32 idLopHoc = 1;
   string tenlop = 2;
-  string Phong = 3;
+  string phong = 3;
 }
 message UpdateLopHocResponse {
   bool success = 1;

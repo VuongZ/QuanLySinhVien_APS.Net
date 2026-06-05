@@ -24,42 +24,42 @@ namespace MyApp.Contracts.Protos {
     static LopHocReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChNQcm90b3MvTG9wSG9jLnByb3RvIjMKBkxvcEhvYxIKCgJpZBgBIAEoBRIO",
-            "CgZ0ZW5sb3AYAiABKAkSDQoFUGhvbmcYAyABKAkiKwoMU2luaFZpZW5JbmZv",
-            "Eg0KBXRlbnN2GAEgASgJEgwKBG1zc3YYAiABKAkiFgoUR2V0QWxsTG9wSG9j",
-            "c1JlcXVlc3QiMQoVR2V0QWxsTG9wSG9jc1Jlc3BvbnNlEhgKB2xvcEhvY3MY",
-            "ASADKAsyBy5Mb3BIb2MiIgoUR2V0TG9wSG9jQnlJZFJlcXVlc3QSCgoCaWQY",
-            "ASABKAUiOwoOTG9wSG9jUmVzcG9uc2USCgoCaWQYASABKAUSDgoGdGVubG9w",
-            "GAIgASgJEg0KBVBob25nGAMgASgJIl0KE0NyZWF0ZUxvcEhvY1JlcXVlc3QS",
-            "DgoGdGVubG9wGAEgASgJEg0KBVBob25nGAIgASgJEicKEGRhbmhzYWNoc2lu",
-            "aHZpZW4YAyADKAsyDS5TaW5oVmllbkluZm8iIgoUQ3JlYXRlTG9wSG9jUmVz",
-            "cG9uc2USCgoCaWQYASABKAUiQAoTVXBkYXRlTG9wSG9jUmVxdWVzdBIKCgJp",
-            "ZBgBIAEoBRIOCgZ0ZW5sb3AYAiABKAkSDQoFUGhvbmcYAyABKAkiJwoUVXBk",
-            "YXRlTG9wSG9jUmVzcG9uc2USDwoHc3VjY2VzcxgBIAEoCCIhChNEZWxldGVM",
-            "b3BIb2NSZXF1ZXN0EgoKAmlkGAEgASgFIicKFERlbGV0ZUxvcEhvY1Jlc3Bv",
-            "bnNlEg8KB3N1Y2Nlc3MYASABKAgyvAIKCkxvcEhvY0dycGMSPgoNR2V0QWxs",
-            "TG9wSG9jcxIVLkdldEFsbExvcEhvY3NSZXF1ZXN0GhYuR2V0QWxsTG9wSG9j",
-            "c1Jlc3BvbnNlEjcKDUdldExvcEhvY0J5SWQSFS5HZXRMb3BIb2NCeUlkUmVx",
-            "dWVzdBoPLkxvcEhvY1Jlc3BvbnNlEjsKDENyZWF0ZUxvcEhvYxIULkNyZWF0",
-            "ZUxvcEhvY1JlcXVlc3QaFS5DcmVhdGVMb3BIb2NSZXNwb25zZRI7CgxVcGRh",
-            "dGVMb3BIb2MSFC5VcGRhdGVMb3BIb2NSZXF1ZXN0GhUuVXBkYXRlTG9wSG9j",
-            "UmVzcG9uc2USOwoMRGVsZXRlTG9wSG9jEhQuRGVsZXRlTG9wSG9jUmVxdWVz",
-            "dBoVLkRlbGV0ZUxvcEhvY1Jlc3BvbnNlQhmqAhZNeUFwcC5Db250cmFjdHMu",
-            "UHJvdG9zYgZwcm90bzM="));
+            "ChNQcm90b3MvTG9wSG9jLnByb3RvIjkKBkxvcEhvYxIQCghpZExvcEhvYxgB",
+            "IAEoBRIOCgZ0ZW5sb3AYAiABKAkSDQoFUGhvbmcYAyABKAkiKwoMU2luaFZp",
+            "ZW5JbmZvEg0KBXRlbnN2GAEgASgJEgwKBG1zc3YYAiABKAkiFgoUR2V0QWxs",
+            "TG9wSG9jc1JlcXVlc3QiMQoVR2V0QWxsTG9wSG9jc1Jlc3BvbnNlEhgKB2xv",
+            "cEhvY3MYASADKAsyBy5Mb3BIb2MiIgoUR2V0TG9wSG9jQnlJZFJlcXVlc3QS",
+            "CgoCaWQYASABKAUiQQoOTG9wSG9jUmVzcG9uc2USEAoIaWRMb3BIb2MYASAB",
+            "KAUSDgoGdGVubG9wGAIgASgJEg0KBVBob25nGAMgASgJIl0KE0NyZWF0ZUxv",
+            "cEhvY1JlcXVlc3QSDgoGdGVubG9wGAEgASgJEg0KBVBob25nGAIgASgJEicK",
+            "EGRhbmhzYWNoc2luaHZpZW4YAyADKAsyDS5TaW5oVmllbkluZm8iKAoUQ3Jl",
+            "YXRlTG9wSG9jUmVzcG9uc2USEAoIaWRMb3BIb2MYASABKAUiRgoTVXBkYXRl",
+            "TG9wSG9jUmVxdWVzdBIQCghpZExvcEhvYxgBIAEoBRIOCgZ0ZW5sb3AYAiAB",
+            "KAkSDQoFUGhvbmcYAyABKAkiJwoUVXBkYXRlTG9wSG9jUmVzcG9uc2USDwoH",
+            "c3VjY2VzcxgBIAEoCCInChNEZWxldGVMb3BIb2NSZXF1ZXN0EhAKCGlkTG9w",
+            "SG9jGAEgASgFIicKFERlbGV0ZUxvcEhvY1Jlc3BvbnNlEg8KB3N1Y2Nlc3MY",
+            "ASABKAgyvAIKCkxvcEhvY0dycGMSPgoNR2V0QWxsTG9wSG9jcxIVLkdldEFs",
+            "bExvcEhvY3NSZXF1ZXN0GhYuR2V0QWxsTG9wSG9jc1Jlc3BvbnNlEjcKDUdl",
+            "dExvcEhvY0J5SWQSFS5HZXRMb3BIb2NCeUlkUmVxdWVzdBoPLkxvcEhvY1Jl",
+            "c3BvbnNlEjsKDENyZWF0ZUxvcEhvYxIULkNyZWF0ZUxvcEhvY1JlcXVlc3Qa",
+            "FS5DcmVhdGVMb3BIb2NSZXNwb25zZRI7CgxVcGRhdGVMb3BIb2MSFC5VcGRh",
+            "dGVMb3BIb2NSZXF1ZXN0GhUuVXBkYXRlTG9wSG9jUmVzcG9uc2USOwoMRGVs",
+            "ZXRlTG9wSG9jEhQuRGVsZXRlTG9wSG9jUmVxdWVzdBoVLkRlbGV0ZUxvcEhv",
+            "Y1Jlc3BvbnNlQhmqAhZNeUFwcC5Db250cmFjdHMuUHJvdG9zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::MyApp.Contracts.Protos.LopHoc), global::MyApp.Contracts.Protos.LopHoc.Parser, new[]{ "Id", "Tenlop", "Phong" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::MyApp.Contracts.Protos.LopHoc), global::MyApp.Contracts.Protos.LopHoc.Parser, new[]{ "IdLopHoc", "Tenlop", "Phong" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::MyApp.Contracts.Protos.SinhVienInfo), global::MyApp.Contracts.Protos.SinhVienInfo.Parser, new[]{ "Tensv", "Mssv" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::MyApp.Contracts.Protos.GetAllLopHocsRequest), global::MyApp.Contracts.Protos.GetAllLopHocsRequest.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::MyApp.Contracts.Protos.GetAllLopHocsResponse), global::MyApp.Contracts.Protos.GetAllLopHocsResponse.Parser, new[]{ "LopHocs" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::MyApp.Contracts.Protos.GetLopHocByIdRequest), global::MyApp.Contracts.Protos.GetLopHocByIdRequest.Parser, new[]{ "Id" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::MyApp.Contracts.Protos.LopHocResponse), global::MyApp.Contracts.Protos.LopHocResponse.Parser, new[]{ "Id", "Tenlop", "Phong" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::MyApp.Contracts.Protos.LopHocResponse), global::MyApp.Contracts.Protos.LopHocResponse.Parser, new[]{ "IdLopHoc", "Tenlop", "Phong" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::MyApp.Contracts.Protos.CreateLopHocRequest), global::MyApp.Contracts.Protos.CreateLopHocRequest.Parser, new[]{ "Tenlop", "Phong", "Danhsachsinhvien" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::MyApp.Contracts.Protos.CreateLopHocResponse), global::MyApp.Contracts.Protos.CreateLopHocResponse.Parser, new[]{ "Id" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::MyApp.Contracts.Protos.UpdateLopHocRequest), global::MyApp.Contracts.Protos.UpdateLopHocRequest.Parser, new[]{ "Id", "Tenlop", "Phong" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::MyApp.Contracts.Protos.CreateLopHocResponse), global::MyApp.Contracts.Protos.CreateLopHocResponse.Parser, new[]{ "IdLopHoc" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::MyApp.Contracts.Protos.UpdateLopHocRequest), global::MyApp.Contracts.Protos.UpdateLopHocRequest.Parser, new[]{ "IdLopHoc", "Tenlop", "Phong" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::MyApp.Contracts.Protos.UpdateLopHocResponse), global::MyApp.Contracts.Protos.UpdateLopHocResponse.Parser, new[]{ "Success" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::MyApp.Contracts.Protos.DeleteLopHocRequest), global::MyApp.Contracts.Protos.DeleteLopHocRequest.Parser, new[]{ "Id" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::MyApp.Contracts.Protos.DeleteLopHocRequest), global::MyApp.Contracts.Protos.DeleteLopHocRequest.Parser, new[]{ "IdLopHoc" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::MyApp.Contracts.Protos.DeleteLopHocResponse), global::MyApp.Contracts.Protos.DeleteLopHocResponse.Parser, new[]{ "Success" }, null, null, null, null)
           }));
     }
@@ -102,7 +102,7 @@ namespace MyApp.Contracts.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public LopHoc(LopHoc other) : this() {
-      id_ = other.id_;
+      idLopHoc_ = other.idLopHoc_;
       tenlop_ = other.tenlop_;
       phong_ = other.phong_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -114,15 +114,15 @@ namespace MyApp.Contracts.Protos {
       return new LopHoc(this);
     }
 
-    /// <summary>Field number for the "id" field.</summary>
-    public const int IdFieldNumber = 1;
-    private int id_;
+    /// <summary>Field number for the "idLopHoc" field.</summary>
+    public const int IdLopHocFieldNumber = 1;
+    private int idLopHoc_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Id {
-      get { return id_; }
+    public int IdLopHoc {
+      get { return idLopHoc_; }
       set {
-        id_ = value;
+        idLopHoc_ = value;
       }
     }
 
@@ -165,7 +165,7 @@ namespace MyApp.Contracts.Protos {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Id != other.Id) return false;
+      if (IdLopHoc != other.IdLopHoc) return false;
       if (Tenlop != other.Tenlop) return false;
       if (Phong != other.Phong) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -175,7 +175,7 @@ namespace MyApp.Contracts.Protos {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Id != 0) hash ^= Id.GetHashCode();
+      if (IdLopHoc != 0) hash ^= IdLopHoc.GetHashCode();
       if (Tenlop.Length != 0) hash ^= Tenlop.GetHashCode();
       if (Phong.Length != 0) hash ^= Phong.GetHashCode();
       if (_unknownFields != null) {
@@ -196,9 +196,9 @@ namespace MyApp.Contracts.Protos {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Id != 0) {
+      if (IdLopHoc != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(Id);
+        output.WriteInt32(IdLopHoc);
       }
       if (Tenlop.Length != 0) {
         output.WriteRawTag(18);
@@ -218,9 +218,9 @@ namespace MyApp.Contracts.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Id != 0) {
+      if (IdLopHoc != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(Id);
+        output.WriteInt32(IdLopHoc);
       }
       if (Tenlop.Length != 0) {
         output.WriteRawTag(18);
@@ -240,8 +240,8 @@ namespace MyApp.Contracts.Protos {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Id != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
+      if (IdLopHoc != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(IdLopHoc);
       }
       if (Tenlop.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Tenlop);
@@ -261,8 +261,8 @@ namespace MyApp.Contracts.Protos {
       if (other == null) {
         return;
       }
-      if (other.Id != 0) {
-        Id = other.Id;
+      if (other.IdLopHoc != 0) {
+        IdLopHoc = other.IdLopHoc;
       }
       if (other.Tenlop.Length != 0) {
         Tenlop = other.Tenlop;
@@ -290,7 +290,7 @@ namespace MyApp.Contracts.Protos {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Id = input.ReadInt32();
+            IdLopHoc = input.ReadInt32();
             break;
           }
           case 18: {
@@ -321,7 +321,7 @@ namespace MyApp.Contracts.Protos {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            Id = input.ReadInt32();
+            IdLopHoc = input.ReadInt32();
             break;
           }
           case 18: {
@@ -1155,7 +1155,7 @@ namespace MyApp.Contracts.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public LopHocResponse(LopHocResponse other) : this() {
-      id_ = other.id_;
+      idLopHoc_ = other.idLopHoc_;
       tenlop_ = other.tenlop_;
       phong_ = other.phong_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -1167,15 +1167,15 @@ namespace MyApp.Contracts.Protos {
       return new LopHocResponse(this);
     }
 
-    /// <summary>Field number for the "id" field.</summary>
-    public const int IdFieldNumber = 1;
-    private int id_;
+    /// <summary>Field number for the "idLopHoc" field.</summary>
+    public const int IdLopHocFieldNumber = 1;
+    private int idLopHoc_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Id {
-      get { return id_; }
+    public int IdLopHoc {
+      get { return idLopHoc_; }
       set {
-        id_ = value;
+        idLopHoc_ = value;
       }
     }
 
@@ -1218,7 +1218,7 @@ namespace MyApp.Contracts.Protos {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Id != other.Id) return false;
+      if (IdLopHoc != other.IdLopHoc) return false;
       if (Tenlop != other.Tenlop) return false;
       if (Phong != other.Phong) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -1228,7 +1228,7 @@ namespace MyApp.Contracts.Protos {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Id != 0) hash ^= Id.GetHashCode();
+      if (IdLopHoc != 0) hash ^= IdLopHoc.GetHashCode();
       if (Tenlop.Length != 0) hash ^= Tenlop.GetHashCode();
       if (Phong.Length != 0) hash ^= Phong.GetHashCode();
       if (_unknownFields != null) {
@@ -1249,9 +1249,9 @@ namespace MyApp.Contracts.Protos {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Id != 0) {
+      if (IdLopHoc != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(Id);
+        output.WriteInt32(IdLopHoc);
       }
       if (Tenlop.Length != 0) {
         output.WriteRawTag(18);
@@ -1271,9 +1271,9 @@ namespace MyApp.Contracts.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Id != 0) {
+      if (IdLopHoc != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(Id);
+        output.WriteInt32(IdLopHoc);
       }
       if (Tenlop.Length != 0) {
         output.WriteRawTag(18);
@@ -1293,8 +1293,8 @@ namespace MyApp.Contracts.Protos {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Id != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
+      if (IdLopHoc != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(IdLopHoc);
       }
       if (Tenlop.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Tenlop);
@@ -1314,8 +1314,8 @@ namespace MyApp.Contracts.Protos {
       if (other == null) {
         return;
       }
-      if (other.Id != 0) {
-        Id = other.Id;
+      if (other.IdLopHoc != 0) {
+        IdLopHoc = other.IdLopHoc;
       }
       if (other.Tenlop.Length != 0) {
         Tenlop = other.Tenlop;
@@ -1343,7 +1343,7 @@ namespace MyApp.Contracts.Protos {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Id = input.ReadInt32();
+            IdLopHoc = input.ReadInt32();
             break;
           }
           case 18: {
@@ -1374,7 +1374,7 @@ namespace MyApp.Contracts.Protos {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            Id = input.ReadInt32();
+            IdLopHoc = input.ReadInt32();
             break;
           }
           case 18: {
@@ -1688,7 +1688,7 @@ namespace MyApp.Contracts.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CreateLopHocResponse(CreateLopHocResponse other) : this() {
-      id_ = other.id_;
+      idLopHoc_ = other.idLopHoc_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1698,15 +1698,15 @@ namespace MyApp.Contracts.Protos {
       return new CreateLopHocResponse(this);
     }
 
-    /// <summary>Field number for the "id" field.</summary>
-    public const int IdFieldNumber = 1;
-    private int id_;
+    /// <summary>Field number for the "idLopHoc" field.</summary>
+    public const int IdLopHocFieldNumber = 1;
+    private int idLopHoc_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Id {
-      get { return id_; }
+    public int IdLopHoc {
+      get { return idLopHoc_; }
       set {
-        id_ = value;
+        idLopHoc_ = value;
       }
     }
 
@@ -1725,7 +1725,7 @@ namespace MyApp.Contracts.Protos {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Id != other.Id) return false;
+      if (IdLopHoc != other.IdLopHoc) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1733,7 +1733,7 @@ namespace MyApp.Contracts.Protos {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Id != 0) hash ^= Id.GetHashCode();
+      if (IdLopHoc != 0) hash ^= IdLopHoc.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1752,9 +1752,9 @@ namespace MyApp.Contracts.Protos {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Id != 0) {
+      if (IdLopHoc != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(Id);
+        output.WriteInt32(IdLopHoc);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -1766,9 +1766,9 @@ namespace MyApp.Contracts.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Id != 0) {
+      if (IdLopHoc != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(Id);
+        output.WriteInt32(IdLopHoc);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -1780,8 +1780,8 @@ namespace MyApp.Contracts.Protos {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Id != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
+      if (IdLopHoc != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(IdLopHoc);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1795,8 +1795,8 @@ namespace MyApp.Contracts.Protos {
       if (other == null) {
         return;
       }
-      if (other.Id != 0) {
-        Id = other.Id;
+      if (other.IdLopHoc != 0) {
+        IdLopHoc = other.IdLopHoc;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1818,7 +1818,7 @@ namespace MyApp.Contracts.Protos {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Id = input.ReadInt32();
+            IdLopHoc = input.ReadInt32();
             break;
           }
         }
@@ -1841,7 +1841,7 @@ namespace MyApp.Contracts.Protos {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            Id = input.ReadInt32();
+            IdLopHoc = input.ReadInt32();
             break;
           }
         }
@@ -1886,7 +1886,7 @@ namespace MyApp.Contracts.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public UpdateLopHocRequest(UpdateLopHocRequest other) : this() {
-      id_ = other.id_;
+      idLopHoc_ = other.idLopHoc_;
       tenlop_ = other.tenlop_;
       phong_ = other.phong_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -1898,15 +1898,15 @@ namespace MyApp.Contracts.Protos {
       return new UpdateLopHocRequest(this);
     }
 
-    /// <summary>Field number for the "id" field.</summary>
-    public const int IdFieldNumber = 1;
-    private int id_;
+    /// <summary>Field number for the "idLopHoc" field.</summary>
+    public const int IdLopHocFieldNumber = 1;
+    private int idLopHoc_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Id {
-      get { return id_; }
+    public int IdLopHoc {
+      get { return idLopHoc_; }
       set {
-        id_ = value;
+        idLopHoc_ = value;
       }
     }
 
@@ -1949,7 +1949,7 @@ namespace MyApp.Contracts.Protos {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Id != other.Id) return false;
+      if (IdLopHoc != other.IdLopHoc) return false;
       if (Tenlop != other.Tenlop) return false;
       if (Phong != other.Phong) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -1959,7 +1959,7 @@ namespace MyApp.Contracts.Protos {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Id != 0) hash ^= Id.GetHashCode();
+      if (IdLopHoc != 0) hash ^= IdLopHoc.GetHashCode();
       if (Tenlop.Length != 0) hash ^= Tenlop.GetHashCode();
       if (Phong.Length != 0) hash ^= Phong.GetHashCode();
       if (_unknownFields != null) {
@@ -1980,9 +1980,9 @@ namespace MyApp.Contracts.Protos {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Id != 0) {
+      if (IdLopHoc != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(Id);
+        output.WriteInt32(IdLopHoc);
       }
       if (Tenlop.Length != 0) {
         output.WriteRawTag(18);
@@ -2002,9 +2002,9 @@ namespace MyApp.Contracts.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Id != 0) {
+      if (IdLopHoc != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(Id);
+        output.WriteInt32(IdLopHoc);
       }
       if (Tenlop.Length != 0) {
         output.WriteRawTag(18);
@@ -2024,8 +2024,8 @@ namespace MyApp.Contracts.Protos {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Id != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
+      if (IdLopHoc != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(IdLopHoc);
       }
       if (Tenlop.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Tenlop);
@@ -2045,8 +2045,8 @@ namespace MyApp.Contracts.Protos {
       if (other == null) {
         return;
       }
-      if (other.Id != 0) {
-        Id = other.Id;
+      if (other.IdLopHoc != 0) {
+        IdLopHoc = other.IdLopHoc;
       }
       if (other.Tenlop.Length != 0) {
         Tenlop = other.Tenlop;
@@ -2074,7 +2074,7 @@ namespace MyApp.Contracts.Protos {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Id = input.ReadInt32();
+            IdLopHoc = input.ReadInt32();
             break;
           }
           case 18: {
@@ -2105,7 +2105,7 @@ namespace MyApp.Contracts.Protos {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            Id = input.ReadInt32();
+            IdLopHoc = input.ReadInt32();
             break;
           }
           case 18: {
@@ -2356,7 +2356,7 @@ namespace MyApp.Contracts.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public DeleteLopHocRequest(DeleteLopHocRequest other) : this() {
-      id_ = other.id_;
+      idLopHoc_ = other.idLopHoc_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2366,15 +2366,15 @@ namespace MyApp.Contracts.Protos {
       return new DeleteLopHocRequest(this);
     }
 
-    /// <summary>Field number for the "id" field.</summary>
-    public const int IdFieldNumber = 1;
-    private int id_;
+    /// <summary>Field number for the "idLopHoc" field.</summary>
+    public const int IdLopHocFieldNumber = 1;
+    private int idLopHoc_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Id {
-      get { return id_; }
+    public int IdLopHoc {
+      get { return idLopHoc_; }
       set {
-        id_ = value;
+        idLopHoc_ = value;
       }
     }
 
@@ -2393,7 +2393,7 @@ namespace MyApp.Contracts.Protos {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Id != other.Id) return false;
+      if (IdLopHoc != other.IdLopHoc) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2401,7 +2401,7 @@ namespace MyApp.Contracts.Protos {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Id != 0) hash ^= Id.GetHashCode();
+      if (IdLopHoc != 0) hash ^= IdLopHoc.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2420,9 +2420,9 @@ namespace MyApp.Contracts.Protos {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Id != 0) {
+      if (IdLopHoc != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(Id);
+        output.WriteInt32(IdLopHoc);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -2434,9 +2434,9 @@ namespace MyApp.Contracts.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Id != 0) {
+      if (IdLopHoc != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(Id);
+        output.WriteInt32(IdLopHoc);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -2448,8 +2448,8 @@ namespace MyApp.Contracts.Protos {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Id != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
+      if (IdLopHoc != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(IdLopHoc);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -2463,8 +2463,8 @@ namespace MyApp.Contracts.Protos {
       if (other == null) {
         return;
       }
-      if (other.Id != 0) {
-        Id = other.Id;
+      if (other.IdLopHoc != 0) {
+        IdLopHoc = other.IdLopHoc;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2486,7 +2486,7 @@ namespace MyApp.Contracts.Protos {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Id = input.ReadInt32();
+            IdLopHoc = input.ReadInt32();
             break;
           }
         }
@@ -2509,7 +2509,7 @@ namespace MyApp.Contracts.Protos {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            Id = input.ReadInt32();
+            IdLopHoc = input.ReadInt32();
             break;
           }
         }

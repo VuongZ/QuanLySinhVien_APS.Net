@@ -23,7 +23,7 @@ public class SinhVienGrpcService : SinhVienGrpc.SinhVienGrpcBase
         var response = new GetAllSinhViensResponse();
         response.SinhViens.AddRange(sinhViens.Select(s => new SinhVien
         {
-            Id = s.Id_SinhVien,
+            IdSinhVien = s.Id_SinhVien,
             Tensv = s.TenSinhVien,
             Mssv = s.MaSoSinhVien
         }));
@@ -33,15 +33,15 @@ public class SinhVienGrpcService : SinhVienGrpc.SinhVienGrpcBase
     public override async Task<SinhVienResponse> GetSinhVienById(
         GetSinhVienByIdRequest request, ServerCallContext context)
     {
-        var query = new GetByIdSinhVienQuery { Id = request.Id };
+        var query = new GetByIdSinhVienQuery { Id = request.IdSinhVien };
         var sinhVien = await _mediator.Send(query);
         if (sinhVien == null)
             throw new RpcException(new Status(
-                StatusCode.NotFound, $"Sinh vien voi ID {request.Id} khong ton tai"));
+                StatusCode.NotFound, $"Sinh vien voi ID {request.IdSinhVien} khong ton tai"));
 
         return new SinhVienResponse
         {
-            Id = sinhVien.Id_SinhVien,
+            IdSinhVien = sinhVien.Id_SinhVien,
             Tensv = sinhVien.TenSinhVien,
             Mssv = sinhVien.MaSoSinhVien
         };
@@ -62,7 +62,7 @@ public class SinhVienGrpcService : SinhVienGrpc.SinhVienGrpcBase
             }).ToList()
         };
         var sinhVien = await _mediator.Send(command);
-        return new CreateSinhVienResponse { Id = sinhVien.Id_SinhVien };
+        return new CreateSinhVienResponse { IdSinhVien = sinhVien.Id_SinhVien };
     }
 
     public override async Task<UpdateSinhVienResponse> UpdateSinhVien(
@@ -70,7 +70,7 @@ public class SinhVienGrpcService : SinhVienGrpc.SinhVienGrpcBase
     {
         var command = new UpdateSinhVienCommand
         {
-            Id_SinhVien = request.Id,
+            Id_SinhVien = request.IdSinhVien,
             TenSinhVien = request.Tensv,
             MaSoSinhVien = request.Mssv
         };
@@ -81,7 +81,7 @@ public class SinhVienGrpcService : SinhVienGrpc.SinhVienGrpcBase
     public override async Task<DeleteSinhVienResponse> DeleteSinhVien(
         DeleteSinhVienRequest request, ServerCallContext context)
     {
-        var command = new DeleteSinhVienCommand { Id_SinhVien = request.Id };
+        var command = new DeleteSinhVienCommand { Id_SinhVien = request.IdSinhVien };
         await _mediator.Send(command);
         return new DeleteSinhVienResponse { Success = true };
     }

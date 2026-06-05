@@ -8,7 +8,7 @@ service LopHocGrpc {
   rpc DeleteLopHoc (DeleteLopHocRequest) returns (DeleteLopHocResponse);
 }
 message LopHoc {
-  int32 id = 1;
+  int32 idLopHoc = 1;
   string tenlop = 2;
   string Phong = 3;
 }
@@ -24,7 +24,7 @@ message GetLopHocByIdRequest {
   int32 id = 1;
 }
 message LopHocResponse {
-  int32 id = 1;
+  int32 idLopHoc = 1;
   string tenlop = 2;
   string Phong = 3;
 }
@@ -34,10 +34,10 @@ message CreateLopHocRequest {
   repeated SinhVienInfo danhsachsinhvien=3;
 }
 message CreateLopHocResponse {
-  int32 id = 1;
+  int32 idLopHoc = 1;
 }
 message UpdateLopHocRequest {
-  int32 id = 1;
+  int32 idLopHoc = 1;
   string tenlop = 2;
   string Phong = 3;
 }
@@ -45,7 +45,7 @@ message UpdateLopHocResponse {
   bool success = 1;
 }
 message DeleteLopHocRequest {
-  int32 id = 1;
+  int32 idLopHoc = 1;
 }
 message DeleteLopHocResponse {
   bool success = 1;

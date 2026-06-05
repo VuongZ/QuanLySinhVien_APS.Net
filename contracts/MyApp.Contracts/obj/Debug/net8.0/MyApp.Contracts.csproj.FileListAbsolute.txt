@@ -10,3 +10,4 @@ D:\dotnet\QuanLySinhVien\contracts\MyApp.Contracts\obj\Debug\net8.0\MyApp.Contra
 D:\dotnet\QuanLySinhVien\contracts\MyApp.Contracts\obj\Debug\net8.0\refint\MyApp.Contracts.dll
 D:\dotnet\QuanLySinhVien\contracts\MyApp.Contracts\obj\Debug\net8.0\MyApp.Contracts.pdb
 D:\dotnet\QuanLySinhVien\contracts\MyApp.Contracts\obj\Debug\net8.0\ref\MyApp.Contracts.dll
+D:\dotnet\QuanLySinhVien\contracts\MyApp.Contracts\obj\Debug\net8.0\MyApp.Contracts.sourcelink.json

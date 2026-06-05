@@ -185,3 +185,4 @@ D:\dotnet\QuanLySinhVien\tests\MyApp.Integration.Tests\bin\Debug\net8.0\MassTran
 D:\dotnet\QuanLySinhVien\tests\MyApp.Integration.Tests\bin\Debug\net8.0\MassTransit.Abstractions.dll
 D:\dotnet\QuanLySinhVien\tests\MyApp.Integration.Tests\bin\Debug\net8.0\MassTransit.RabbitMqTransport.dll
 D:\dotnet\QuanLySinhVien\tests\MyApp.Integration.Tests\bin\Debug\net8.0\RabbitMQ.Client.dll
+D:\dotnet\QuanLySinhVien\tests\MyApp.Integration.Tests\obj\Debug\net8.0\MyApp.Integration.Tests.sourcelink.json

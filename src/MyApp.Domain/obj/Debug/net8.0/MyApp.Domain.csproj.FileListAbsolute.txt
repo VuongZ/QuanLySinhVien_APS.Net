@@ -10,3 +10,4 @@ D:\dotnet\QuanLySinhVien\src\MyApp.Domain\obj\Debug\net8.0\refint\MyApp.Domain.d
 D:\dotnet\QuanLySinhVien\src\MyApp.Domain\obj\Debug\net8.0\MyApp.Domain.pdb
 D:\dotnet\QuanLySinhVien\src\MyApp.Domain\obj\Debug\net8.0\ref\MyApp.Domain.dll
 D:\dotnet\QuanLySinhVien\src\MyApp.Domain\obj\Debug\net8.0\MyApp.Domain.csproj.AssemblyReference.cache
+D:\dotnet\QuanLySinhVien\src\MyApp.Domain\obj\Debug\net8.0\MyApp.Domain.sourcelink.json

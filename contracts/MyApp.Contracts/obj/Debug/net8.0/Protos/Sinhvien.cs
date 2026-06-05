@@ -24,43 +24,44 @@ namespace MyApp.Contracts.Protos {
     static SinhvienReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChVQcm90b3Mvc2luaHZpZW4ucHJvdG8iMwoIU2luaFZpZW4SCgoCaWQYASAB",
-            "KAUSDQoFdGVuc3YYAiABKAkSDAoEbXNzdhgDIAEoCSIrCgpMb3BIb2NJbmZv",
-            "Eg4KBnRlbmxvcBgBIAEoCRINCgVwaG9uZxgCIAEoCSIYChZHZXRBbGxTaW5o",
-            "VmllbnNSZXF1ZXN0IjcKF0dldEFsbFNpbmhWaWVuc1Jlc3BvbnNlEhwKCXNp",
-            "bmhWaWVucxgBIAMoCzIJLlNpbmhWaWVuIiQKFkdldFNpbmhWaWVuQnlJZFJl",
-            "cXVlc3QSCgoCaWQYASABKAUiOwoQU2luaFZpZW5SZXNwb25zZRIKCgJpZBgB",
-            "IAEoBRINCgV0ZW5zdhgCIAEoCRIMCgRtc3N2GAMgASgJIlkKFUNyZWF0ZVNp",
-            "bmhWaWVuUmVxdWVzdBINCgV0ZW5zdhgBIAEoCRIMCgRtc3N2GAIgASgJEiMK",
-            "DmRhbmhzYWNobG9waG9jGAMgAygLMgsuTG9wSG9jSW5mbyIkChZDcmVhdGVT",
-            "aW5oVmllblJlc3BvbnNlEgoKAmlkGAEgASgFIkAKFVVwZGF0ZVNpbmhWaWVu",
-            "UmVxdWVzdBIKCgJpZBgBIAEoBRINCgV0ZW5zdhgCIAEoCRIMCgRtc3N2GAMg",
-            "ASgJIikKFlVwZGF0ZVNpbmhWaWVuUmVzcG9uc2USDwoHc3VjY2VzcxgBIAEo",
-            "CCIjChVEZWxldGVTaW5oVmllblJlcXVlc3QSCgoCaWQYASABKAUiKQoWRGVs",
-            "ZXRlU2luaFZpZW5SZXNwb25zZRIPCgdzdWNjZXNzGAEgASgIMtwCCgxTaW5o",
-            "VmllbkdycGMSRAoPR2V0QWxsU2luaFZpZW5zEhcuR2V0QWxsU2luaFZpZW5z",
-            "UmVxdWVzdBoYLkdldEFsbFNpbmhWaWVuc1Jlc3BvbnNlEj0KD0dldFNpbmhW",
-            "aWVuQnlJZBIXLkdldFNpbmhWaWVuQnlJZFJlcXVlc3QaES5TaW5oVmllblJl",
-            "c3BvbnNlEkEKDkNyZWF0ZVNpbmhWaWVuEhYuQ3JlYXRlU2luaFZpZW5SZXF1",
-            "ZXN0GhcuQ3JlYXRlU2luaFZpZW5SZXNwb25zZRJBCg5VcGRhdGVTaW5oVmll",
-            "bhIWLlVwZGF0ZVNpbmhWaWVuUmVxdWVzdBoXLlVwZGF0ZVNpbmhWaWVuUmVz",
-            "cG9uc2USQQoORGVsZXRlU2luaFZpZW4SFi5EZWxldGVTaW5oVmllblJlcXVl",
-            "c3QaFy5EZWxldGVTaW5oVmllblJlc3BvbnNlQhmqAhZNeUFwcC5Db250cmFj",
-            "dHMuUHJvdG9zYgZwcm90bzM="));
+            "ChVQcm90b3Mvc2luaHZpZW4ucHJvdG8iOwoIU2luaFZpZW4SEgoKaWRTaW5o",
+            "VmllbhgBIAEoBRINCgV0ZW5zdhgCIAEoCRIMCgRtc3N2GAMgASgJIisKCkxv",
+            "cEhvY0luZm8SDgoGdGVubG9wGAEgASgJEg0KBXBob25nGAIgASgJIhgKFkdl",
+            "dEFsbFNpbmhWaWVuc1JlcXVlc3QiNwoXR2V0QWxsU2luaFZpZW5zUmVzcG9u",
+            "c2USHAoJc2luaFZpZW5zGAEgAygLMgkuU2luaFZpZW4iLAoWR2V0U2luaFZp",
+            "ZW5CeUlkUmVxdWVzdBISCgppZFNpbmhWaWVuGAEgASgFIkMKEFNpbmhWaWVu",
+            "UmVzcG9uc2USEgoKaWRTaW5oVmllbhgBIAEoBRINCgV0ZW5zdhgCIAEoCRIM",
+            "CgRtc3N2GAMgASgJIlkKFUNyZWF0ZVNpbmhWaWVuUmVxdWVzdBINCgV0ZW5z",
+            "dhgBIAEoCRIMCgRtc3N2GAIgASgJEiMKDmRhbmhzYWNobG9waG9jGAMgAygL",
+            "MgsuTG9wSG9jSW5mbyIsChZDcmVhdGVTaW5oVmllblJlc3BvbnNlEhIKCmlk",
+            "U2luaFZpZW4YASABKAUiSAoVVXBkYXRlU2luaFZpZW5SZXF1ZXN0EhIKCmlk",
+            "U2luaFZpZW4YASABKAUSDQoFdGVuc3YYAiABKAkSDAoEbXNzdhgDIAEoCSIp",
+            "ChZVcGRhdGVTaW5oVmllblJlc3BvbnNlEg8KB3N1Y2Nlc3MYASABKAgiKwoV",
+            "RGVsZXRlU2luaFZpZW5SZXF1ZXN0EhIKCmlkU2luaFZpZW4YASABKAUiKQoW",
+            "RGVsZXRlU2luaFZpZW5SZXNwb25zZRIPCgdzdWNjZXNzGAEgASgIMtwCCgxT",
+            "aW5oVmllbkdycGMSRAoPR2V0QWxsU2luaFZpZW5zEhcuR2V0QWxsU2luaFZp",
+            "ZW5zUmVxdWVzdBoYLkdldEFsbFNpbmhWaWVuc1Jlc3BvbnNlEj0KD0dldFNp",
+            "bmhWaWVuQnlJZBIXLkdldFNpbmhWaWVuQnlJZFJlcXVlc3QaES5TaW5oVmll",
+            "blJlc3BvbnNlEkEKDkNyZWF0ZVNpbmhWaWVuEhYuQ3JlYXRlU2luaFZpZW5S",
+            "ZXF1ZXN0GhcuQ3JlYXRlU2luaFZpZW5SZXNwb25zZRJBCg5VcGRhdGVTaW5o",
+            "VmllbhIWLlVwZGF0ZVNpbmhWaWVuUmVxdWVzdBoXLlVwZGF0ZVNpbmhWaWVu",
+            "UmVzcG9uc2USQQoORGVsZXRlU2luaFZpZW4SFi5EZWxldGVTaW5oVmllblJl",
+            "cXVlc3QaFy5EZWxldGVTaW5oVmllblJlc3BvbnNlQhmqAhZNeUFwcC5Db250",
+            "cmFjdHMuUHJvdG9zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::MyApp.Contracts.Protos.SinhVien), global::MyApp.Contracts.Protos.SinhVien.Parser, new[]{ "Id", "Tensv", "Mssv" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::MyApp.Contracts.Protos.SinhVien), global::MyApp.Contracts.Protos.SinhVien.Parser, new[]{ "IdSinhVien", "Tensv", "Mssv" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::MyApp.Contracts.Protos.LopHocInfo), global::MyApp.Contracts.Protos.LopHocInfo.Parser, new[]{ "Tenlop", "Phong" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::MyApp.Contracts.Protos.GetAllSinhViensRequest), global::MyApp.Contracts.Protos.GetAllSinhViensRequest.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::MyApp.Contracts.Protos.GetAllSinhViensResponse), global::MyApp.Contracts.Protos.GetAllSinhViensResponse.Parser, new[]{ "SinhViens" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::MyApp.Contracts.Protos.GetSinhVienByIdRequest), global::MyApp.Contracts.Protos.GetSinhVienByIdRequest.Parser, new[]{ "Id" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::MyApp.Contracts.Protos.SinhVienResponse), global::MyApp.Contracts.Protos.SinhVienResponse.Parser, new[]{ "Id", "Tensv", "Mssv" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::MyApp.Contracts.Protos.GetSinhVienByIdRequest), global::MyApp.Contracts.Protos.GetSinhVienByIdRequest.Parser, new[]{ "IdSinhVien" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::MyApp.Contracts.Protos.SinhVienResponse), global::MyApp.Contracts.Protos.SinhVienResponse.Parser, new[]{ "IdSinhVien", "Tensv", "Mssv" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::MyApp.Contracts.Protos.CreateSinhVienRequest), global::MyApp.Contracts.Protos.CreateSinhVienRequest.Parser, new[]{ "Tensv", "Mssv", "Danhsachlophoc" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::MyApp.Contracts.Protos.CreateSinhVienResponse), global::MyApp.Contracts.Protos.CreateSinhVienResponse.Parser, new[]{ "Id" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::MyApp.Contracts.Protos.UpdateSinhVienRequest), global::MyApp.Contracts.Protos.UpdateSinhVienRequest.Parser, new[]{ "Id", "Tensv", "Mssv" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::MyApp.Contracts.Protos.CreateSinhVienResponse), global::MyApp.Contracts.Protos.CreateSinhVienResponse.Parser, new[]{ "IdSinhVien" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::MyApp.Contracts.Protos.UpdateSinhVienRequest), global::MyApp.Contracts.Protos.UpdateSinhVienRequest.Parser, new[]{ "IdSinhVien", "Tensv", "Mssv" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::MyApp.Contracts.Protos.UpdateSinhVienResponse), global::MyApp.Contracts.Protos.UpdateSinhVienResponse.Parser, new[]{ "Success" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::MyApp.Contracts.Protos.DeleteSinhVienRequest), global::MyApp.Contracts.Protos.DeleteSinhVienRequest.Parser, new[]{ "Id" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::MyApp.Contracts.Protos.DeleteSinhVienRequest), global::MyApp.Contracts.Protos.DeleteSinhVienRequest.Parser, new[]{ "IdSinhVien" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::MyApp.Contracts.Protos.DeleteSinhVienResponse), global::MyApp.Contracts.Protos.DeleteSinhVienResponse.Parser, new[]{ "Success" }, null, null, null, null)
           }));
     }
@@ -103,7 +104,7 @@ namespace MyApp.Contracts.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SinhVien(SinhVien other) : this() {
-      id_ = other.id_;
+      idSinhVien_ = other.idSinhVien_;
       tensv_ = other.tensv_;
       mssv_ = other.mssv_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -115,15 +116,15 @@ namespace MyApp.Contracts.Protos {
       return new SinhVien(this);
     }
 
-    /// <summary>Field number for the "id" field.</summary>
-    public const int IdFieldNumber = 1;
-    private int id_;
+    /// <summary>Field number for the "idSinhVien" field.</summary>
+    public const int IdSinhVienFieldNumber = 1;
+    private int idSinhVien_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Id {
-      get { return id_; }
+    public int IdSinhVien {
+      get { return idSinhVien_; }
       set {
-        id_ = value;
+        idSinhVien_ = value;
       }
     }
 
@@ -166,7 +167,7 @@ namespace MyApp.Contracts.Protos {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Id != other.Id) return false;
+      if (IdSinhVien != other.IdSinhVien) return false;
       if (Tensv != other.Tensv) return false;
       if (Mssv != other.Mssv) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -176,7 +177,7 @@ namespace MyApp.Contracts.Protos {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Id != 0) hash ^= Id.GetHashCode();
+      if (IdSinhVien != 0) hash ^= IdSinhVien.GetHashCode();
       if (Tensv.Length != 0) hash ^= Tensv.GetHashCode();
       if (Mssv.Length != 0) hash ^= Mssv.GetHashCode();
       if (_unknownFields != null) {
@@ -197,9 +198,9 @@ namespace MyApp.Contracts.Protos {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Id != 0) {
+      if (IdSinhVien != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(Id);
+        output.WriteInt32(IdSinhVien);
       }
       if (Tensv.Length != 0) {
         output.WriteRawTag(18);
@@ -219,9 +220,9 @@ namespace MyApp.Contracts.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Id != 0) {
+      if (IdSinhVien != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(Id);
+        output.WriteInt32(IdSinhVien);
       }
       if (Tensv.Length != 0) {
         output.WriteRawTag(18);
@@ -241,8 +242,8 @@ namespace MyApp.Contracts.Protos {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Id != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
+      if (IdSinhVien != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(IdSinhVien);
       }
       if (Tensv.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Tensv);
@@ -262,8 +263,8 @@ namespace MyApp.Contracts.Protos {
       if (other == null) {
         return;
       }
-      if (other.Id != 0) {
-        Id = other.Id;
+      if (other.IdSinhVien != 0) {
+        IdSinhVien = other.IdSinhVien;
       }
       if (other.Tensv.Length != 0) {
         Tensv = other.Tensv;
@@ -291,7 +292,7 @@ namespace MyApp.Contracts.Protos {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Id = input.ReadInt32();
+            IdSinhVien = input.ReadInt32();
             break;
           }
           case 18: {
@@ -322,7 +323,7 @@ namespace MyApp.Contracts.Protos {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            Id = input.ReadInt32();
+            IdSinhVien = input.ReadInt32();
             break;
           }
           case 18: {
@@ -958,7 +959,7 @@ namespace MyApp.Contracts.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetSinhVienByIdRequest(GetSinhVienByIdRequest other) : this() {
-      id_ = other.id_;
+      idSinhVien_ = other.idSinhVien_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -968,15 +969,15 @@ namespace MyApp.Contracts.Protos {
       return new GetSinhVienByIdRequest(this);
     }
 
-    /// <summary>Field number for the "id" field.</summary>
-    public const int IdFieldNumber = 1;
-    private int id_;
+    /// <summary>Field number for the "idSinhVien" field.</summary>
+    public const int IdSinhVienFieldNumber = 1;
+    private int idSinhVien_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Id {
-      get { return id_; }
+    public int IdSinhVien {
+      get { return idSinhVien_; }
       set {
-        id_ = value;
+        idSinhVien_ = value;
       }
     }
 
@@ -995,7 +996,7 @@ namespace MyApp.Contracts.Protos {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Id != other.Id) return false;
+      if (IdSinhVien != other.IdSinhVien) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1003,7 +1004,7 @@ namespace MyApp.Contracts.Protos {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Id != 0) hash ^= Id.GetHashCode();
+      if (IdSinhVien != 0) hash ^= IdSinhVien.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1022,9 +1023,9 @@ namespace MyApp.Contracts.Protos {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Id != 0) {
+      if (IdSinhVien != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(Id);
+        output.WriteInt32(IdSinhVien);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -1036,9 +1037,9 @@ namespace MyApp.Contracts.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Id != 0) {
+      if (IdSinhVien != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(Id);
+        output.WriteInt32(IdSinhVien);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -1050,8 +1051,8 @@ namespace MyApp.Contracts.Protos {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Id != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
+      if (IdSinhVien != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(IdSinhVien);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1065,8 +1066,8 @@ namespace MyApp.Contracts.Protos {
       if (other == null) {
         return;
       }
-      if (other.Id != 0) {
-        Id = other.Id;
+      if (other.IdSinhVien != 0) {
+        IdSinhVien = other.IdSinhVien;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1088,7 +1089,7 @@ namespace MyApp.Contracts.Protos {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Id = input.ReadInt32();
+            IdSinhVien = input.ReadInt32();
             break;
           }
         }
@@ -1111,7 +1112,7 @@ namespace MyApp.Contracts.Protos {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            Id = input.ReadInt32();
+            IdSinhVien = input.ReadInt32();
             break;
           }
         }
@@ -1156,7 +1157,7 @@ namespace MyApp.Contracts.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SinhVienResponse(SinhVienResponse other) : this() {
-      id_ = other.id_;
+      idSinhVien_ = other.idSinhVien_;
       tensv_ = other.tensv_;
       mssv_ = other.mssv_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -1168,15 +1169,15 @@ namespace MyApp.Contracts.Protos {
       return new SinhVienResponse(this);
     }
 
-    /// <summary>Field number for the "id" field.</summary>
-    public const int IdFieldNumber = 1;
-    private int id_;
+    /// <summary>Field number for the "idSinhVien" field.</summary>
+    public const int IdSinhVienFieldNumber = 1;
+    private int idSinhVien_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Id {
-      get { return id_; }
+    public int IdSinhVien {
+      get { return idSinhVien_; }
       set {
-        id_ = value;
+        idSinhVien_ = value;
       }
     }
 
@@ -1219,7 +1220,7 @@ namespace MyApp.Contracts.Protos {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Id != other.Id) return false;
+      if (IdSinhVien != other.IdSinhVien) return false;
       if (Tensv != other.Tensv) return false;
       if (Mssv != other.Mssv) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -1229,7 +1230,7 @@ namespace MyApp.Contracts.Protos {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Id != 0) hash ^= Id.GetHashCode();
+      if (IdSinhVien != 0) hash ^= IdSinhVien.GetHashCode();
       if (Tensv.Length != 0) hash ^= Tensv.GetHashCode();
       if (Mssv.Length != 0) hash ^= Mssv.GetHashCode();
       if (_unknownFields != null) {
@@ -1250,9 +1251,9 @@ namespace MyApp.Contracts.Protos {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Id != 0) {
+      if (IdSinhVien != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(Id);
+        output.WriteInt32(IdSinhVien);
       }
       if (Tensv.Length != 0) {
         output.WriteRawTag(18);
@@ -1272,9 +1273,9 @@ namespace MyApp.Contracts.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Id != 0) {
+      if (IdSinhVien != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(Id);
+        output.WriteInt32(IdSinhVien);
       }
       if (Tensv.Length != 0) {
         output.WriteRawTag(18);
@@ -1294,8 +1295,8 @@ namespace MyApp.Contracts.Protos {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Id != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
+      if (IdSinhVien != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(IdSinhVien);
       }
       if (Tensv.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Tensv);
@@ -1315,8 +1316,8 @@ namespace MyApp.Contracts.Protos {
       if (other == null) {
         return;
       }
-      if (other.Id != 0) {
-        Id = other.Id;
+      if (other.IdSinhVien != 0) {
+        IdSinhVien = other.IdSinhVien;
       }
       if (other.Tensv.Length != 0) {
         Tensv = other.Tensv;
@@ -1344,7 +1345,7 @@ namespace MyApp.Contracts.Protos {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Id = input.ReadInt32();
+            IdSinhVien = input.ReadInt32();
             break;
           }
           case 18: {
@@ -1375,7 +1376,7 @@ namespace MyApp.Contracts.Protos {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            Id = input.ReadInt32();
+            IdSinhVien = input.ReadInt32();
             break;
           }
           case 18: {
@@ -1689,7 +1690,7 @@ namespace MyApp.Contracts.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CreateSinhVienResponse(CreateSinhVienResponse other) : this() {
-      id_ = other.id_;
+      idSinhVien_ = other.idSinhVien_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1699,15 +1700,15 @@ namespace MyApp.Contracts.Protos {
       return new CreateSinhVienResponse(this);
     }
 
-    /// <summary>Field number for the "id" field.</summary>
-    public const int IdFieldNumber = 1;
-    private int id_;
+    /// <summary>Field number for the "idSinhVien" field.</summary>
+    public const int IdSinhVienFieldNumber = 1;
+    private int idSinhVien_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Id {
-      get { return id_; }
+    public int IdSinhVien {
+      get { return idSinhVien_; }
       set {
-        id_ = value;
+        idSinhVien_ = value;
       }
     }
 
@@ -1726,7 +1727,7 @@ namespace MyApp.Contracts.Protos {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Id != other.Id) return false;
+      if (IdSinhVien != other.IdSinhVien) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1734,7 +1735,7 @@ namespace MyApp.Contracts.Protos {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Id != 0) hash ^= Id.GetHashCode();
+      if (IdSinhVien != 0) hash ^= IdSinhVien.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1753,9 +1754,9 @@ namespace MyApp.Contracts.Protos {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Id != 0) {
+      if (IdSinhVien != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(Id);
+        output.WriteInt32(IdSinhVien);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -1767,9 +1768,9 @@ namespace MyApp.Contracts.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Id != 0) {
+      if (IdSinhVien != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(Id);
+        output.WriteInt32(IdSinhVien);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -1781,8 +1782,8 @@ namespace MyApp.Contracts.Protos {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Id != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
+      if (IdSinhVien != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(IdSinhVien);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1796,8 +1797,8 @@ namespace MyApp.Contracts.Protos {
       if (other == null) {
         return;
       }
-      if (other.Id != 0) {
-        Id = other.Id;
+      if (other.IdSinhVien != 0) {
+        IdSinhVien = other.IdSinhVien;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1819,7 +1820,7 @@ namespace MyApp.Contracts.Protos {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Id = input.ReadInt32();
+            IdSinhVien = input.ReadInt32();
             break;
           }
         }
@@ -1842,7 +1843,7 @@ namespace MyApp.Contracts.Protos {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            Id = input.ReadInt32();
+            IdSinhVien = input.ReadInt32();
             break;
           }
         }
@@ -1887,7 +1888,7 @@ namespace MyApp.Contracts.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public UpdateSinhVienRequest(UpdateSinhVienRequest other) : this() {
-      id_ = other.id_;
+      idSinhVien_ = other.idSinhVien_;
       tensv_ = other.tensv_;
       mssv_ = other.mssv_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -1899,15 +1900,15 @@ namespace MyApp.Contracts.Protos {
       return new UpdateSinhVienRequest(this);
     }
 
-    /// <summary>Field number for the "id" field.</summary>
-    public const int IdFieldNumber = 1;
-    private int id_;
+    /// <summary>Field number for the "idSinhVien" field.</summary>
+    public const int IdSinhVienFieldNumber = 1;
+    private int idSinhVien_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Id {
-      get { return id_; }
+    public int IdSinhVien {
+      get { return idSinhVien_; }
       set {
-        id_ = value;
+        idSinhVien_ = value;
       }
     }
 
@@ -1950,7 +1951,7 @@ namespace MyApp.Contracts.Protos {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Id != other.Id) return false;
+      if (IdSinhVien != other.IdSinhVien) return false;
       if (Tensv != other.Tensv) return false;
       if (Mssv != other.Mssv) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -1960,7 +1961,7 @@ namespace MyApp.Contracts.Protos {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Id != 0) hash ^= Id.GetHashCode();
+      if (IdSinhVien != 0) hash ^= IdSinhVien.GetHashCode();
       if (Tensv.Length != 0) hash ^= Tensv.GetHashCode();
       if (Mssv.Length != 0) hash ^= Mssv.GetHashCode();
       if (_unknownFields != null) {
@@ -1981,9 +1982,9 @@ namespace MyApp.Contracts.Protos {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Id != 0) {
+      if (IdSinhVien != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(Id);
+        output.WriteInt32(IdSinhVien);
       }
       if (Tensv.Length != 0) {
         output.WriteRawTag(18);
@@ -2003,9 +2004,9 @@ namespace MyApp.Contracts.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Id != 0) {
+      if (IdSinhVien != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(Id);
+        output.WriteInt32(IdSinhVien);
       }
       if (Tensv.Length != 0) {
         output.WriteRawTag(18);
@@ -2025,8 +2026,8 @@ namespace MyApp.Contracts.Protos {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Id != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
+      if (IdSinhVien != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(IdSinhVien);
       }
       if (Tensv.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Tensv);
@@ -2046,8 +2047,8 @@ namespace MyApp.Contracts.Protos {
       if (other == null) {
         return;
       }
-      if (other.Id != 0) {
-        Id = other.Id;
+      if (other.IdSinhVien != 0) {
+        IdSinhVien = other.IdSinhVien;
       }
       if (other.Tensv.Length != 0) {
         Tensv = other.Tensv;
@@ -2075,7 +2076,7 @@ namespace MyApp.Contracts.Protos {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Id = input.ReadInt32();
+            IdSinhVien = input.ReadInt32();
             break;
           }
           case 18: {
@@ -2106,7 +2107,7 @@ namespace MyApp.Contracts.Protos {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            Id = input.ReadInt32();
+            IdSinhVien = input.ReadInt32();
             break;
           }
           case 18: {
@@ -2357,7 +2358,7 @@ namespace MyApp.Contracts.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public DeleteSinhVienRequest(DeleteSinhVienRequest other) : this() {
-      id_ = other.id_;
+      idSinhVien_ = other.idSinhVien_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2367,15 +2368,15 @@ namespace MyApp.Contracts.Protos {
       return new DeleteSinhVienRequest(this);
     }
 
-    /// <summary>Field number for the "id" field.</summary>
-    public const int IdFieldNumber = 1;
-    private int id_;
+    /// <summary>Field number for the "idSinhVien" field.</summary>
+    public const int IdSinhVienFieldNumber = 1;
+    private int idSinhVien_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Id {
-      get { return id_; }
+    public int IdSinhVien {
+      get { return idSinhVien_; }
       set {
-        id_ = value;
+        idSinhVien_ = value;
       }
     }
 
@@ -2394,7 +2395,7 @@ namespace MyApp.Contracts.Protos {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Id != other.Id) return false;
+      if (IdSinhVien != other.IdSinhVien) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2402,7 +2403,7 @@ namespace MyApp.Contracts.Protos {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Id != 0) hash ^= Id.GetHashCode();
+      if (IdSinhVien != 0) hash ^= IdSinhVien.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2421,9 +2422,9 @@ namespace MyApp.Contracts.Protos {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Id != 0) {
+      if (IdSinhVien != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(Id);
+        output.WriteInt32(IdSinhVien);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -2435,9 +2436,9 @@ namespace MyApp.Contracts.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Id != 0) {
+      if (IdSinhVien != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(Id);
+        output.WriteInt32(IdSinhVien);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -2449,8 +2450,8 @@ namespace MyApp.Contracts.Protos {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Id != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
+      if (IdSinhVien != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(IdSinhVien);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -2464,8 +2465,8 @@ namespace MyApp.Contracts.Protos {
       if (other == null) {
         return;
       }
-      if (other.Id != 0) {
-        Id = other.Id;
+      if (other.IdSinhVien != 0) {
+        IdSinhVien = other.IdSinhVien;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2487,7 +2488,7 @@ namespace MyApp.Contracts.Protos {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Id = input.ReadInt32();
+            IdSinhVien = input.ReadInt32();
             break;
           }
         }
@@ -2510,7 +2511,7 @@ namespace MyApp.Contracts.Protos {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            Id = input.ReadInt32();
+            IdSinhVien = input.ReadInt32();
             break;
           }
         }

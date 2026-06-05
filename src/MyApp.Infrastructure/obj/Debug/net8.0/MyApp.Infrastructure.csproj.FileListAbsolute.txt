@@ -19,3 +19,4 @@ D:\dotnet\QuanLySinhVien\src\MyApp.Infrastructure\obj\Debug\net8.0\MyApp.Infrast
 D:\dotnet\QuanLySinhVien\src\MyApp.Infrastructure\obj\Debug\net8.0\ref\MyApp.Infrastructure.dll
 D:\dotnet\QuanLySinhVien\src\MyApp.Infrastructure\bin\Debug\net8.0\MyApp.Infrastructure.runtimeconfig.json
 D:\dotnet\QuanLySinhVien\src\MyApp.Infrastructure\obj\Debug\net8.0\MyApp.Infrastructure.genruntimeconfig.cache
+D:\dotnet\QuanLySinhVien\src\MyApp.Infrastructure\obj\Debug\net8.0\MyApp.Infrastructure.sourcelink.json

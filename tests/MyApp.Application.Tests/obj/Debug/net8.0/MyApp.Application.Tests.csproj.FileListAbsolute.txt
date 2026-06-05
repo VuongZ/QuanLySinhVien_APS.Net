@@ -141,3 +141,4 @@ D:\dotnet\QuanLySinhVien\tests\MyApp.Application.Tests\bin\Debug\net8.0\Microsof
 D:\dotnet\QuanLySinhVien\tests\MyApp.Application.Tests\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
 D:\dotnet\QuanLySinhVien\tests\MyApp.Application.Tests\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll
 D:\dotnet\QuanLySinhVien\tests\MyApp.Application.Tests\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
+D:\dotnet\QuanLySinhVien\tests\MyApp.Application.Tests\obj\Debug\net8.0\MyApp.Application.Tests.sourcelink.json

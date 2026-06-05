@@ -23,7 +23,7 @@ public class LopHocGrpcService : LopHocGrpc.LopHocGrpcBase
         var response = new GetAllLopHocsResponse();
         response.LopHocs.AddRange(lopHocs.Select(l => new LopHoc
         {
-            Id = l.Id_LopHoc,
+            IdLopHoc = l.Id_LopHoc,
             Tenlop = l.TenLop,
             Phong = l.Phong
         }));
@@ -41,7 +41,7 @@ public class LopHocGrpcService : LopHocGrpc.LopHocGrpcBase
 
         return new LopHocResponse
         {
-            Id = lopHoc.Id_LopHoc,
+            IdLopHoc = lopHoc.Id_LopHoc,
             Tenlop = lopHoc.TenLop,
             Phong = lopHoc.Phong
         };
@@ -63,7 +63,7 @@ public class LopHocGrpcService : LopHocGrpc.LopHocGrpcBase
             ).ToList()
         };
         var lopHoc = await _mediator.Send(command);
-        return new CreateLopHocResponse { Id = lopHoc.Id_LopHoc };
+        return new CreateLopHocResponse { IdLopHoc   = lopHoc.Id_LopHoc };
     }
 
     public override async Task<UpdateLopHocResponse> UpdateLopHoc(
@@ -71,7 +71,7 @@ public class LopHocGrpcService : LopHocGrpc.LopHocGrpcBase
     {
         var command = new UpdateLopHocCommand
         {
-            Id = request.Id,
+            Id = request.IdLopHoc,
             TenLop = request.Tenlop,
             Sophong = request.Phong
         };
@@ -82,7 +82,7 @@ public class LopHocGrpcService : LopHocGrpc.LopHocGrpcBase
     public override async Task<DeleteLopHocResponse> DeleteLopHoc(
         DeleteLopHocRequest request, ServerCallContext context)
     {
-        var command = new DeleteLopHocCommand { Id = request.Id };
+        var command = new DeleteLopHocCommand { Id = request.IdLopHoc };
         await _mediator.Send(command);
         return new DeleteLopHocResponse { Success = true };
     }

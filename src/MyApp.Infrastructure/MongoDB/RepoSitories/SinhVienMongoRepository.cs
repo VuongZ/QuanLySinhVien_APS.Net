@@ -15,19 +15,19 @@ public class SinhVienMongoRepository : MonGoRepository<SinhVienDocument>, ISinhV
     public override async Task<SinhVienDocument?> GetByIdAsync(int id)
     {
         return await _collection
-            .Find(sv => sv.Id_SinhVien == id)
+            .Find(sv => sv.IdSinhVien == id)
             .FirstOrDefaultAsync();
     }
 
     public override async Task UpdateAsync(int id, SinhVienDocument document)
     {
         await _collection.ReplaceOneAsync(
-            sv => sv.Id_SinhVien == id, document);
+            sv => sv.IdSinhVien == id, document);
     }
 
     public override async Task DeleteAsync(int id)
     {
-        await _collection.DeleteOneAsync(sv => sv.Id_SinhVien == id);
+        await _collection.DeleteOneAsync(sv => sv.IdSinhVien == id);
     }
 
     public async Task<SinhVienDocument?> GetByMSSVAsync(string mssv)

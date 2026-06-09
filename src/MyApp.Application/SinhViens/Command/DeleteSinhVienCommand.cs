@@ -4,6 +4,6 @@ namespace MyApp.Application.SinhViens.Command
 {
     public class DeleteSinhVienCommand : IRequest<bool>
     {
-        public int Id_SinhVien { get; set; }
+        public int Id { get; set; }
     }
 }

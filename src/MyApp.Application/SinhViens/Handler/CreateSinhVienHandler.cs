@@ -49,11 +49,11 @@ namespace MyApp.Application.SinhViens.Handler
 
              await _publishEndpoint.Publish(new SinhVienCreatedEvent
             {
-                Id_SinhVien=sinhVien.Id_SinhVien,
+                IdSinhVien=sinhVien.Id,
                 TenSinhVien=sinhVien.TenSinhVien,
                 MaSoSinhVien=sinhVien.MaSoSinhVien,
                 DanhSachLopHoc = danhsachlophoc.Select(lh=>new LopHocInEvent
-                  { Id_LopHoc = lh.Id_LopHoc,
+                  { IdLopHoc = lh.Id,
                 TenLop = lh.TenLop,
                 Phong = lh.Phong
                 }).ToList()

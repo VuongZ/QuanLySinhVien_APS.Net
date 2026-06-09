@@ -21,11 +21,11 @@ namespace MyApp.Application.SinhViens.Handler
 
         public async Task<bool> Handle(DeleteSinhVienCommand request, CancellationToken cancellationToken)
         {
-            var sv= await _sinhVienRepository.GetByIdAsync(request.Id_SinhVien);
-            await _sinhVienRepository.DeleteAsync(request.Id_SinhVien);
+            var sv= await _sinhVienRepository.GetByIdAsync(request.Id);
+            await _sinhVienRepository.DeleteAsync(request.Id);
             await _publishEndpoint.Publish(new SinhVienDeletedEvent
             {
-                Id_SinhVien = request.Id_SinhVien
+                IdSinhVien = request.Id
             }, cancellationToken);
             return true;
         }

@@ -27,7 +27,7 @@ namespace MyApp.Application.LopHocs.Handler
             await _lopHocRepository.DeleteAsync(request.Id);
             await _publishEndpoint.Publish(new LopHocDeletedEvent
             {
-                Id_LopHoc = request.Id
+                IdLopHoc = request.Id
             }, cancellationToken);
             return true;
         }

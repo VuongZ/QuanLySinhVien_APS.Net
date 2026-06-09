@@ -10,9 +10,10 @@ service SinhVienGrpc {
 }
 
 message SinhVien {
-  int32 idSinhVien = 1;
+  int32 id = 1;
   string tensv = 2;
   string mssv = 3;
+  repeated LopHocInfo danhsachlophoc=4;
 }
 message LopHocInfo{
     string tenlop = 1;
@@ -23,12 +24,13 @@ message GetAllSinhViensResponse {
   repeated SinhVien sinhViens = 1;
 }
 message GetSinhVienByIdRequest {
-  int32 idSinhVien = 1;
+  int32 id = 1;
 }
 message SinhVienResponse {
-  int32 idSinhVien = 1;
+  int32 id = 1;
   string tensv = 2;
   string mssv = 3;
+  repeated LopHocInfo danhsachlophoc=4;
 }
 message CreateSinhVienRequest {
   string tensv = 1;
@@ -36,10 +38,10 @@ message CreateSinhVienRequest {
   repeated LopHocInfo danhsachlophoc=3;
 }
 message CreateSinhVienResponse {
-  int32 idSinhVien = 1;
+  int32 id = 1;
 }
 message UpdateSinhVienRequest {
-  int32 idSinhVien = 1;
+  int32 id = 1;
   string tensv = 2;
   string  mssv = 3;
 }
@@ -47,7 +49,7 @@ message UpdateSinhVienResponse {
   bool success = 1;
 }
 message DeleteSinhVienRequest {
-  int32 idSinhVien = 1;
+  int32 id = 1;
 }
 message DeleteSinhVienResponse {
   bool success = 1;

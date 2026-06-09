@@ -20,21 +20,21 @@ public class SinhVienCreatedConsumer : IConsumer<SinhVienCreatedEvent>
         var message=context.Message;
                var sinhVienDocument = new SinhVienDocument
     {
-        Id_SinhVien = message.Id_SinhVien,
+        IdSinhVien = message.IdSinhVien,
         TenSinhVien = message.TenSinhVien,
         MaSoSinhVien = message.MaSoSinhVien,
         DanhSachLop = new List<LopHocDocument>()
     };
         var danhsachlophoc=message.DanhSachLopHoc.Select(lh=> new LopHocDocument
         {
-            Id_LopHoc=lh.Id_LopHoc,
+            IdLopHoc=lh.IdLopHoc,
             TenLop=lh.TenLop,
             Phong=lh.Phong,
             DanhSachSinhVien= new List<SinhVienDocument>{ sinhVienDocument }
         }).ToList();
         var document= new SinhVienDocument
         {
-            Id_SinhVien=message.Id_SinhVien,
+            IdSinhVien=message.IdSinhVien,
             TenSinhVien=message.TenSinhVien,
             MaSoSinhVien=message.MaSoSinhVien,
             DanhSachLop=danhsachlophoc

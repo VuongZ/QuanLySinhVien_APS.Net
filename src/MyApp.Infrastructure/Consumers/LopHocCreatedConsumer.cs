@@ -21,30 +21,52 @@ public class LopHocCreatedConsumer : IConsumer<LopHocCreatedEvent>
         var message = context.Message;
           var lopHocDocument = new LopHocDocument
     {
-        Id_LopHoc = message.Id_LopHoc,
+        IdLopHoc = message.IdLopHoc,
         TenLop = message.TenLop,
         Phong = message.Phong,
-        DanhSachSinhVien = new List<SinhVienDocument>()
-    };
-        var danhsachSinhVien=message.DanhSachSinhVien.Select(sv=> new SinhVienDocument
-        {
-                Id_SinhVien = sv.Id_SinhVien,
+        DanhSachSinhVien = message.DanhSachSinhVien.Select(sv=> new SinhVienDocument
+       {
+                IdSinhVien = sv.IdSinhVien,
             TenSinhVien = sv.TenSinhVien,
             MaSoSinhVien = sv.MaSoSinhVien,
-            DanhSachLop = new List<LopHocDocument>{lopHocDocument}
-        }).ToList();
-        var document = new LopHocDocument
+            DanhSachLop = new List<LopHocDocument>()
+        }).ToList()
+    };
+     await _lopHocMongoRepository.AddAsync(lopHocDocument);
+         foreach (var sv in message.DanhSachSinhVien)
+    {
+        var existing = await _SinhVienMongoRepository.GetByIdAsync(sv.IdSinhVien);
+        if (existing != null)
         {
-            Id_LopHoc = message.Id_LopHoc,
-            TenLop = message.TenLop,
-            Phong = message.Phong,
-            DanhSachSinhVien = danhsachSinhVien
-        };
-
-        await _lopHocMongoRepository.AddAsync(document);
-         foreach (var sv in danhsachSinhVien)
-        {
-            await _SinhVienMongoRepository.AddAsync(sv);
+            existing.DanhSachLop.Add(new LopHocDocument
+            {
+                IdLopHoc = lopHocDocument.IdLopHoc,
+                TenLop = lopHocDocument.TenLop,
+                Phong = lopHocDocument.Phong,
+                DanhSachSinhVien = new List<SinhVienDocument>()
+            });
+            await _SinhVienMongoRepository.UpdateAsync(sv.IdSinhVien, existing);
         }
+        else
+        {
+            var sinhVienDocument = new SinhVienDocument
+            {
+                IdSinhVien = sv.IdSinhVien,
+                TenSinhVien = sv.TenSinhVien,
+                MaSoSinhVien = sv.MaSoSinhVien,
+                DanhSachLop = new List<LopHocDocument>
+                {
+                    new LopHocDocument
+                    {
+                        IdLopHoc = lopHocDocument.IdLopHoc,
+                        TenLop = lopHocDocument.TenLop,
+                        Phong = lopHocDocument.Phong,
+                        DanhSachSinhVien = new List<SinhVienDocument>() 
+                    }
+                }
+            };
+            await _SinhVienMongoRepository.AddAsync(sinhVienDocument);
+        }
+    }
     }
 }

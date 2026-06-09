@@ -12,12 +12,12 @@ public class LopHocUpdatedConsumer : IConsumer<LopHocUpdatedEvent>
     }
     public async Task Consume(ConsumeContext<LopHocUpdatedEvent> context)
     {
-       var lopHoc = await _lopHocMongoRepository.GetByIdAsync(context.Message.Id_LopHoc);
+       var lopHoc = await _lopHocMongoRepository.GetByIdAsync(context.Message.IdLopHoc);
        if(lopHoc != null)
        {
             lopHoc.TenLop = context.Message.TenLop;
             lopHoc.Phong = context.Message.Phong;
-            await _lopHocMongoRepository.UpdateAsync(context.Message.Id_LopHoc, lopHoc);
+            await _lopHocMongoRepository.UpdateAsync(context.Message.IdLopHoc, lopHoc);
        }
     }
 }

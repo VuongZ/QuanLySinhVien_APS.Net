@@ -12,6 +12,6 @@ public class LopHocDeletedConsumer : IConsumer<LopHocDeletedEvent>
     }
     public async Task Consume(ConsumeContext<LopHocDeletedEvent> context)
     {
-       await _lopHocMongoRepository.DeleteAsync(context.Message.Id_LopHoc);
+       await _lopHocMongoRepository.DeleteAsync(context.Message.IdLopHoc);
     }
 }

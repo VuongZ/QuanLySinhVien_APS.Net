@@ -12,12 +12,12 @@ public class SinhVienUpdatedConsumer : IConsumer<SinhVienUpdatedEvent>
     }
     public async Task Consume(ConsumeContext<SinhVienUpdatedEvent> context)
     {
-       var sinhVien = await _sinhVienMongoRepository.GetByIdAsync(context.Message.Id_SinhVien);
+       var sinhVien = await _sinhVienMongoRepository.GetByIdAsync(context.Message.IdSinhVien);
        if(sinhVien != null)
        {
             sinhVien.TenSinhVien = context.Message.TenSinhVien;
             sinhVien.MaSoSinhVien = context.Message.MaSoSinhVien;
-            await _sinhVienMongoRepository.UpdateAsync(context.Message.Id_SinhVien, sinhVien);
+            await _sinhVienMongoRepository.UpdateAsync(context.Message.IdSinhVien, sinhVien);
        }
     }
 }

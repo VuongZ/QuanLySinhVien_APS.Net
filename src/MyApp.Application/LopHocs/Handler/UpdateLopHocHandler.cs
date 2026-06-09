@@ -37,7 +37,7 @@
                 await _unitOfWork.CommitAsync(cancellationToken);
                 await _publishEndpoint.Publish(new LopHocUpdatedEvent
                 {
-                    Id_LopHoc = request.Id,
+                    IdLopHoc = request.Id,
                     TenLop = request.TenLop,
                     Phong = request.Sophong
                 }, cancellationToken);

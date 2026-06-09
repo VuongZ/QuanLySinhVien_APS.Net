@@ -12,6 +12,6 @@ public class SinhVienDeletedConsumer : IConsumer<SinhVienDeletedEvent>
     }
     public async Task Consume(ConsumeContext<SinhVienDeletedEvent> context)
     {
-       await _sinhVienMongoRepository.DeleteAsync(context.Message.Id_SinhVien);
+       await _sinhVienMongoRepository.DeleteAsync(context.Message.IdSinhVien);
     }
 }

@@ -48,11 +48,11 @@ namespace MyApp.Application.LopHocs.Handler
             await _unitOfWork.CommitAsync(cancellationToken);
              await _publishendpoint.Publish(new LopHocCreatedEvent
             {
-                Id_LopHoc=lopHoc.Id_LopHoc,
+                IdLopHoc=lopHoc.Id,
                 TenLop=lopHoc.TenLop,
                 Phong=lopHoc.Phong,
                 DanhSachSinhVien = danhsachsinhvien.Select(sv=>new SinhVienInLopEvent
-                  { Id_SinhVien = sv.Id_SinhVien,
+                  { IdSinhVien = sv.Id,
                 TenSinhVien = sv.TenSinhVien,
                 MaSoSinhVien = sv.MaSoSinhVien
                 }).ToList()

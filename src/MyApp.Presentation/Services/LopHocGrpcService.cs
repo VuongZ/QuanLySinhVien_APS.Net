@@ -21,31 +21,48 @@ public class LopHocGrpcService : LopHocGrpc.LopHocGrpcBase
         var query = new GetAllLopHocQuery();
         var lopHocs = await _mediator.Send(query);
         var response = new GetAllLopHocsResponse();
-        response.LopHocs.AddRange(lopHocs.Select(l => new LopHoc
+        response.LopHocs.AddRange(lopHocs.Select(l =>
         {
-            IdLopHoc = l.Id_LopHoc,
+            var lopHoc=new LopHoc
+            {
+            Id = l.IdLopHoc,
             Tenlop = l.TenLop,
             Phong = l.Phong
-        }));
+
+        };
+        lopHoc.Danhsachsinhvien.AddRange(l.DanhSachSinhVien.Select(sv => new SinhVienInfo
+        {
+            Id=sv.IdSinhVien,
+            Tensv=sv.TenSinhVien,
+            Mssv=sv.MaSoSinhVien
+        }
+        ));
+        return lopHoc;
+    }));
         return response;
     }
 
     public override async Task<LopHocResponse> GetLopHocById(
         GetLopHocByIdRequest request, ServerCallContext context)
     {
-        var query = new GetByIDLopHocQuery { Id = request.Id };
-        var lopHoc = await _mediator.Send(query);
-        if (lopHoc == null)
-            throw new RpcException(new Status(
-                StatusCode.NotFound, $"Lop hoc voi ID {request.Id} khong ton tai"));
+    var lopHoc = await _mediator.Send(new GetByIDLopHocQuery { Id = request.Id });
+    if (lopHoc == null)
+        throw new RpcException(new Status(StatusCode.NotFound, $"Lop hoc {request.Id} khong ton tai"));
 
-        return new LopHocResponse
-        {
-            IdLopHoc = lopHoc.Id_LopHoc,
-            Tenlop = lopHoc.TenLop,
-            Phong = lopHoc.Phong
-        };
-    }
+    var response = new LopHocResponse
+    {
+        Id = lopHoc.IdLopHoc,
+        Tenlop = lopHoc.TenLop,
+        Phong = lopHoc.Phong
+    };
+    response.Danhsachsinhvien.AddRange(lopHoc.DanhSachSinhVien.Select(sv => new SinhVienInfo
+    {
+        Id = sv.IdSinhVien,
+        Tensv = sv.TenSinhVien,
+        Mssv = sv.MaSoSinhVien
+    }));
+    return response;
+}
 
     public override async Task<CreateLopHocResponse> CreateLopHoc(
         CreateLopHocRequest request, ServerCallContext context)
@@ -63,7 +80,7 @@ public class LopHocGrpcService : LopHocGrpc.LopHocGrpcBase
             ).ToList()
         };
         var lopHoc = await _mediator.Send(command);
-        return new CreateLopHocResponse { IdLopHoc   = lopHoc.Id_LopHoc };
+        return new CreateLopHocResponse { Id   = lopHoc.Id };
     }
 
     public override async Task<UpdateLopHocResponse> UpdateLopHoc(
@@ -71,7 +88,7 @@ public class LopHocGrpcService : LopHocGrpc.LopHocGrpcBase
     {
         var command = new UpdateLopHocCommand
         {
-            Id = request.IdLopHoc,
+            Id = request.Id,
             TenLop = request.Tenlop,
             Sophong = request.Phong
         };
@@ -82,7 +99,7 @@ public class LopHocGrpcService : LopHocGrpc.LopHocGrpcBase
     public override async Task<DeleteLopHocResponse> DeleteLopHoc(
         DeleteLopHocRequest request, ServerCallContext context)
     {
-        var command = new DeleteLopHocCommand { Id = request.IdLopHoc };
+        var command = new DeleteLopHocCommand { Id = request.Id };
         await _mediator.Send(command);
         return new DeleteLopHocResponse { Success = true };
     }

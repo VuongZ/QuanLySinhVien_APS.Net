@@ -25,7 +25,7 @@ namespace MyApp.Application.SinhViens.Handler
             await _unitOfWork.BeginTransactionAsync(cancellationToken);
             try
             {
-            var sinhVien = await _sinhVienRepository.GetByIdAsync(request.Id_SinhVien);
+            var sinhVien = await _sinhVienRepository.GetByIdAsync(request.Id);
             if (sinhVien == null)
             {
                  await _unitOfWork.RollbackAsync(cancellationToken);
@@ -38,7 +38,7 @@ namespace MyApp.Application.SinhViens.Handler
             await _unitOfWork.CommitAsync(cancellationToken);
             await _publishEndpoint.Publish(new SinhVienUpdatedEvent
             {
-                Id_SinhVien = request.Id_SinhVien,
+                IdSinhVien = request.Id,
                 TenSinhVien = request.TenSinhVien,
                 MaSoSinhVien = request.MaSoSinhVien
             }, cancellationToken);

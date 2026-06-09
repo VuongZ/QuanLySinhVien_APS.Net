@@ -12,18 +12,18 @@ public class LopHocMongoRepository : MonGoRepository<LopHocDocument> , ILopHocMo
     }
      public override async Task<LopHocDocument?> GetByIdAsync (int id)
     {
-        return await _collection.Find(lh => lh.Id_LopHoc==id).FirstOrDefaultAsync();
+        return await _collection.Find(lh => lh.IdLopHoc==id).FirstOrDefaultAsync();
             
     }
 
     public override async Task UpdateAsync (int id, LopHocDocument document)
     {
-        await _collection.ReplaceOneAsync(l=> l.Id_LopHoc==id,document);
+        await _collection.ReplaceOneAsync(l=> l.IdLopHoc==id,document);
     }
 
     public override async Task DeleteAsync(int id)
     {
-        await _collection.DeleteOneAsync(sv => sv.Id_LopHoc == id);
+        await _collection.DeleteOneAsync(sv => sv.IdLopHoc == id);
     }
 
     public async Task<LopHocDocument?> GetByTenLopAsync(string tenlop)

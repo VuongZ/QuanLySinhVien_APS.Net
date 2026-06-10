@@ -25,7 +25,6 @@ public abstract class Repository<T> : IRepository<T> where T : class
     public async Task UpdateAsync(T entity)
     {
         _dbSet.Update(entity);
-        await _context.SaveChangesAsync();
     }
 
     public async Task<T?> GetByIdAsync(int id)
@@ -40,5 +39,6 @@ public abstract class Repository<T> : IRepository<T> where T : class
             return;
         }
         _dbSet.Remove(entity);
+        await _context.SaveChangesAsync();
     }
 }

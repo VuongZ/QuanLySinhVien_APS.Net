@@ -39,6 +39,7 @@ public static class DependencyInjection
             x.AddConsumer<LopHocDeletedConsumer>();
             x.AddConsumer<SinhVienUpdatedConsumer>();
             x.AddConsumer<LopHocUpdatedConsumer>();
+          
 
             x.UsingRabbitMq((ctx, cfg) =>
             {

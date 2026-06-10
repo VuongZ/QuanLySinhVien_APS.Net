@@ -1,6 +1,6 @@
 using System.Reflection;
 using Microsoft.EntityFrameworkCore;
-using MyApp.Domain.Entities;
+using MyApp.Domain.Entities;    
 
 namespace MyApp.Infrastructure.Persistence;
 public class AppDbContext : DbContext
@@ -12,6 +12,9 @@ public class AppDbContext : DbContext
     public DbSet<LopHoc> LopHocs => Set<LopHoc>();
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        base.OnModelCreating(modelBuilder);
+
        modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+     
     }
 }

@@ -18,17 +18,29 @@ public class SinhVienGrpcService : SinhVienGrpc.SinhVienGrpcBase
     public override async Task<GetAllSinhViensResponse> GetAllSinhViens(
         GetAllSinhViensRequest request, ServerCallContext context)
     {
-        var query = new GetALLSinhVienQuery();
-        var sinhViens = await _mediator.Send(query);
-        var response = new GetAllSinhViensResponse();
-        response.SinhViens.AddRange(sinhViens.Select(s => new SinhVien
+    var query = new GetALLSinhVienQuery();
+    var sinhViens = await _mediator.Send(query);
+    var response = new GetAllSinhViensResponse();
+
+    response.SinhViens.AddRange(sinhViens.Select(s =>
+    {
+        var sv = new SinhVien
         {
             Id = s.IdSinhVien,
             Tensv = s.TenSinhVien,
             Mssv = s.MaSoSinhVien
+        };
+        sv.Danhsachlophoc.AddRange(s.DanhSachLop.Select(lh => new LopHocInfo
+        {
+            Tenlop = lh.TenLop,
+            Phong = lh.Phong
         }));
-        return response;
-    }
+        return sv;
+    }));
+
+    return response;
+}
+
 
     public override async Task<SinhVienResponse> GetSinhVienById(
         GetSinhVienByIdRequest request, ServerCallContext context)

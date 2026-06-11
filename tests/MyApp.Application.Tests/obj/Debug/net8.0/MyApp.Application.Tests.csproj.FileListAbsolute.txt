@@ -142,3 +142,15 @@ D:\dotnet\QuanLySinhVien\tests\MyApp.Application.Tests\bin\Debug\net8.0\Microsof
 D:\dotnet\QuanLySinhVien\tests\MyApp.Application.Tests\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll
 D:\dotnet\QuanLySinhVien\tests\MyApp.Application.Tests\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
 D:\dotnet\QuanLySinhVien\tests\MyApp.Application.Tests\obj\Debug\net8.0\MyApp.Application.Tests.sourcelink.json
+D:\dotnet\QuanLySinhVien\tests\MyApp.Application.Tests\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
+D:\dotnet\QuanLySinhVien\tests\MyApp.Application.Tests\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll
+D:\dotnet\QuanLySinhVien\tests\MyApp.Application.Tests\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+D:\dotnet\QuanLySinhVien\tests\MyApp.Application.Tests\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.dll
+D:\dotnet\QuanLySinhVien\tests\MyApp.Application.Tests\bin\Debug\net8.0\Microsoft.Extensions.Http.dll
+D:\dotnet\QuanLySinhVien\tests\MyApp.Application.Tests\bin\Debug\net8.0\Microsoft.Extensions.Http.Polly.dll
+D:\dotnet\QuanLySinhVien\tests\MyApp.Application.Tests\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+D:\dotnet\QuanLySinhVien\tests\MyApp.Application.Tests\bin\Debug\net8.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+D:\dotnet\QuanLySinhVien\tests\MyApp.Application.Tests\bin\Debug\net8.0\Polly.dll
+D:\dotnet\QuanLySinhVien\tests\MyApp.Application.Tests\bin\Debug\net8.0\Polly.Core.dll
+D:\dotnet\QuanLySinhVien\tests\MyApp.Application.Tests\bin\Debug\net8.0\Polly.Extensions.dll
+D:\dotnet\QuanLySinhVien\tests\MyApp.Application.Tests\bin\Debug\net8.0\Polly.Extensions.Http.dll

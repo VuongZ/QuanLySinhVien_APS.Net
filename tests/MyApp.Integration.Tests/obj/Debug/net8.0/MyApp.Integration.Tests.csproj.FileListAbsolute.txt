@@ -186,3 +186,8 @@ D:\dotnet\QuanLySinhVien\tests\MyApp.Integration.Tests\bin\Debug\net8.0\MassTran
 D:\dotnet\QuanLySinhVien\tests\MyApp.Integration.Tests\bin\Debug\net8.0\MassTransit.RabbitMqTransport.dll
 D:\dotnet\QuanLySinhVien\tests\MyApp.Integration.Tests\bin\Debug\net8.0\RabbitMQ.Client.dll
 D:\dotnet\QuanLySinhVien\tests\MyApp.Integration.Tests\obj\Debug\net8.0\MyApp.Integration.Tests.sourcelink.json
+D:\dotnet\QuanLySinhVien\tests\MyApp.Integration.Tests\bin\Debug\net8.0\Microsoft.Extensions.Http.Polly.dll
+D:\dotnet\QuanLySinhVien\tests\MyApp.Integration.Tests\bin\Debug\net8.0\Polly.dll
+D:\dotnet\QuanLySinhVien\tests\MyApp.Integration.Tests\bin\Debug\net8.0\Polly.Core.dll
+D:\dotnet\QuanLySinhVien\tests\MyApp.Integration.Tests\bin\Debug\net8.0\Polly.Extensions.dll
+D:\dotnet\QuanLySinhVien\tests\MyApp.Integration.Tests\bin\Debug\net8.0\Polly.Extensions.Http.dll

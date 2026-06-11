@@ -15,6 +15,8 @@ public class AppDbContext : DbContext
         base.OnModelCreating(modelBuilder);
 
        modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+       modelBuilder.Entity<LopHoc>().HasQueryFilter(e=>!e.IsDeleted);
+       modelBuilder.Entity<SinhVien>().HasQueryFilter(e => !e.IsDeleted);
      
     }
 }
